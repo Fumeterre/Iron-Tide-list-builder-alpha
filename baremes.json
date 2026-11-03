@@ -1,0 +1,553 @@
+{
+  "infantry": {
+    "Servants / équipe légère": 0.0,
+    "Milice": 5.0,
+    "Réserve": 10.0,
+    "Ligne": 15.0,
+    "Lourde": 25.0,
+    "Assaut": 25.0,
+    "PM / automatiques": 20.0
+  },
+  "cavalry": {
+    "Servants / équipe légère": 5.0,
+    "Milice": 10.0,
+    "Réserve": 15.0,
+    "Ligne": 20.0,
+    "Lourde": 30.0,
+    "Assaut": 30.0,
+    "PM / automatiques": 25.0
+  },
+  "infOptions": [
+    {
+      "name": "Reco",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Indépendantes",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Tirailleurs",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Chasseurs de char",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Troupe de montagne",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Commando",
+      "cost": 20.0,
+      "rawCost": "20"
+    },
+    {
+      "name": "Troupe Coloniale",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Résistant/partisan",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade Antichar",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade Antichar à fusil",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Mine Magnétique",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Charge explosive",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Grenade",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade à fusil",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade fumigène",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Marqueur fumigène",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Cordes/échelles",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Canot",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Armure",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Panzerfaust",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Goliath (Allemagne)",
+      "cost": 25.0,
+      "rawCost": "25"
+    },
+    {
+      "name": "Borgward IV",
+      "cost": 40.0,
+      "rawCost": "40"
+    }
+  ],
+  "cavOptions": [
+    {
+      "name": "Reco",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Indépendantes",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Tirailleurs",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Chasseurs de char",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Troupe de montagne",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Commando",
+      "cost": 20.0,
+      "rawCost": "20"
+    },
+    {
+      "name": "Troupe Coloniale",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Résistant/partisan",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade Antichar",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade Antichar à fusil",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Mine Magnétique",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Charge explosive",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Grenade",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade à fusil",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Grenade fumigène",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Marqueur fumigène",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Cordes/échelles",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Canot",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Armure",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Panzerfaust",
+      "cost": 10.0,
+      "rawCost": "10"
+    }
+  ],
+  "support": [
+    {
+      "name": "MMG",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "HMG",
+      "cost": 25.0,
+      "rawCost": "25"
+    },
+    {
+      "name": "Fusil antichar",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Fusil ATR lourd",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "Panzerschreck / PIAT",
+      "cost": null,
+      "rawCost": "5 + budget AC"
+    },
+    {
+      "name": "Lance-flammes",
+      "cost": 25.0,
+      "rawCost": "25"
+    },
+    {
+      "name": "Mortier léger",
+      "cost": 20.0,
+      "rawCost": "20"
+    },
+    {
+      "name": "Mortier moyen",
+      "cost": 35.0,
+      "rawCost": "35"
+    },
+    {
+      "name": "Observateur supplémentaire",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "Sniper",
+      "cost": 25.0,
+      "rawCost": "25"
+    },
+    {
+      "name": "Grippée",
+      "cost": -7.0,
+      "rawCost": "-7"
+    }
+  ],
+  "vehicleOptions": [
+    {
+      "name": "Amphibie",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Rustique",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Impétueux",
+      "cost": -10.0,
+      "rawCost": "-10"
+    },
+    {
+      "name": "Embusqueur",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Reconnaissance",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Télémètre",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Stabilisateur",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Optiques médiocres",
+      "cost": -10.0,
+      "rawCost": "-10"
+    },
+    {
+      "name": "Tourelle étroite",
+      "cost": -10.0,
+      "rawCost": "-10"
+    },
+    {
+      "name": "Tourelle lente",
+      "cost": -10.0,
+      "rawCost": "-10"
+    },
+    {
+      "name": "Casemate ouverte",
+      "cost": 0.0,
+      "rawCost": "0"
+    },
+    {
+      "name": "Schürzen",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Radio",
+      "cost": 0.0,
+      "rawCost": "0"
+    },
+    {
+      "name": "Sans radio",
+      "cost": -5.0,
+      "rawCost": "-5"
+    },
+    {
+      "name": "Tir rapide",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Lance-fumigène",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Lance Grenade",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Optique IR",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "/ MG coaxiale",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "/ MG caisse",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "/ MG antiaérienne",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "/ MG Tourelle",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "/ HMG coaxiale",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "/ HMG caisse",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "/ HMG antiéaérienne",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "/ HMG Tourelle",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "/canon supplémentaire",
+      "cost": null,
+      "rawCost": "prix canon"
+    },
+    {
+      "name": "Plateforme Tir",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "Plateforme radio",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "Plateforme réparation",
+      "cost": 12.0,
+      "rawCost": "12"
+    },
+    {
+      "name": "Équipement génie",
+      "cost": 0.0,
+      "rawCost": "0"
+    },
+    {
+      "name": "Lames Rhino",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Lame bulldozer",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Roll Miner",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "Masses Crab",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "Chenilles adaptées",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Chenille ou Roue",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Arme jumelée",
+      "cost": 5.0,
+      "rawCost": "5"
+    },
+    {
+      "name": "Anti-infanterie(+1)",
+      "cost": 10.0,
+      "rawCost": "10"
+    },
+    {
+      "name": "Anti-infanterie(+2)",
+      "cost": 15.0,
+      "rawCost": "15"
+    },
+    {
+      "name": "Casemate ouverte",
+      "cost": -10.0,
+      "rawCost": "-10"
+    },
+    {
+      "name": "Coduite double",
+      "cost": 7.0,
+      "rawCost": "7"
+    },
+    {
+      "name": "Agent double",
+      "cost": -5.0,
+      "rawCost": "-5"
+    }
+  ],
+  "formationBase": {
+    "Section infanterie autonome": 15.0,
+    "Compagnie infanterie": 30.0,
+    "Section chars": 15.0,
+    "Section reconnaissance": 15.0,
+    "Batterie canons": 20.0,
+    "Batterie artillerie": 25.0,
+    "Formation antiaérienne": 20.0,
+    "Formation aérienne": 20.0,
+    "Formation personnalisée": 0.0
+  },
+  "experience": {
+    "Novice": [
+      -10.0,
+      -15.0,
+      -20.0
+    ],
+    "Entraîné": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Vétéran": [
+      5.0,
+      10.0,
+      15.0
+    ],
+    "Élite": [
+      10.0,
+      20.0,
+      30.0
+    ],
+    "As": [
+      15.0,
+      30.0,
+      45.0
+    ]
+  },
+  "morale": {
+    "Hésitant": -5,
+    "Vaillant": 0,
+    "Tenace": 5,
+    "Oscillant": -7,
+    "Fanatique": 7
+  }
+}
