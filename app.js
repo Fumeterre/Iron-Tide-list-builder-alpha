@@ -1,4 +1,4 @@
-/* Iron Tide Army Builder V0.5.2 — local-first, sans serveur. */
+/* Iron Tide Army Builder V0.5.3 — local-first, sans serveur. */
 'use strict';
 const $=id=>document.getElementById(id), E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const id=()=>Math.random().toString(36).slice(2,11),money=n=>Number.isFinite(n)?`${Math.round(n*100)/100} pts`:'prix indisponible';
@@ -6,7 +6,7 @@ const DB=JSON.parse($('catalogue-data').textContent),B=JSON.parse($('baremes-dat
 // Captures : matériel d'origine courant uniquement, sous réserve de période/front.
 DB.push({id:'universal-motos',nation:'Allemagne',name:'Motos (transport universel)',kind:'transport',subtype:'Motos',traction:'roues',size:'TP',speed:'Très rapide',armor:'Non blindé',traits:'Transport (1)',costs:{Early:5,Mid:5,Late:5},source:'Transport universel · Groupe 3',sourceRow:0,universal:true});const originals=DB.slice();for(const x of originals){if(x.rarity||!['armor','gun','transport'].includes(x.kind))continue;for(const nation of ['Allemagne','URSS']){if(nation===x.nation)continue;DB.push({...x,id:'capture-'+nation+'-'+x.id,nation,originNation:x.nation,captured:true,name:x.name+' (capturé '+x.nation+')',rarity:x.kind==='gun'?1:0,source:x.source+' · capture'});}}
 const KINDS={reserve:'Infanterie de Réserve',scout:'Section d’éclaireurs',horseScout:'Éclaireurs à cheval',sniper:'Section de snipers URSS',inf:'Infanterie',cav:'Cavalerie',genie:'Génie',recon:'Reconnaissance',light:'Chars légers',medium:'Chars moyens',heavy:'Chars lourds',assault:'Canons d’assaut',td:'Chasseurs de chars',at:'Antichar',art:'Artillerie rapprochée',aa:'Antiaérien',air:'Support aérien',transport:'Transports / soutien',fort:'Fortifications'};
-const PERIOD=['Early','Mid','Late'],EXPS=['Novice','Entraîné','Vétéran','Élite','As'],MORALES=['Hésitant','Vaillant','Tenace'];
+const PERIOD=['Early','Mid','Late'],EXPS=['Novice','Vétéran','Élite','As'],MORALES=['Hésitant','Vaillant','Tenace'];
 let state={name:'Ma force Iron Tide',front:'EST',period:'Late',year:1944,season:'',budget:2000,fortBudget:300,independentForts:[],corps:[{id:id(),nation:'Allemagne',group:'standard',doctrine:0,formations:[]}] ,custom:[]};
 let view='army',search='',editId=null;
 const CATALOG_INDEX=new Map(DB.map(x=>[x.id,x]));
@@ -21,7 +21,7 @@ const isInf=f=>['inf','cav','genie','reserve','scout','horseScout','sniper'].inc
 const isEligibleAs=f=>isArmor(f)||isGun(f)||f.kind==='air';
 // Toutes les formations ont un coût structurel nul : seules les unités, options et supports sont facturés.
 function baseFormation(f){return 0}
-function adjust(base,exp,morale,osc,fan){if(base==null)return null;let tier=base<=100?0:base<=200?1:2;return base+(B.experience[exp]?.[tier]||0)+(B.morale[morale]||0)+(osc?B.morale.Oscillant:0)+(fan?B.morale.Fanatique:0)}
+function adjust(base,exp,morale,osc,fan){if(base==null)return null;let tier=base<=100?0:base<=200?1:2;return base+(B.experience[exp==='Entraîné'?'Vétéran':exp]?.[tier]||0)+(B.morale[morale]||0)+(osc?B.morale.Oscillant:0)+(fan?B.morale.Fanatique:0)}
 function unitPrice(f,u){let table=['cav','horseScout'].includes(f.kind)?B.cav:B.inf,extra=['cav','horseScout'].includes(f.kind)?B.cavOptions:B.infOptions;let n=(table[u.type]||0)+(u.command?(table.Commandement||0):0);for(let opt of u.options)n+=extra[opt]||0;let tr=item(u.transportId);if(tr){let p=tr.costs[state.period];if(p==null)return null;n+=p}return adjust(n,u.exp||f.exp,u.morale||f.morale,u.osc||f.osc,u.fan||f.fan)}
 function canAdaptTracks(x){return /^(chenill[eé]|semi[- ]?chenill[eé])/i.test(String(x?.traction||'').trim())}
 // Restrictions nationales et catégories, appliquées aussi aux anciennes sauvegardes.
