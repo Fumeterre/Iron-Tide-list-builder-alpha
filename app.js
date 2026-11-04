@@ -1,4 +1,4 @@
-/* Iron Tide Army Builder V0.5.3 — local-first, sans serveur. */
+/* Iron Tide Army Builder V0.5.4 — local-first, sans serveur. */
 'use strict';
 const $=id=>document.getElementById(id), E=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const id=()=>Math.random().toString(36).slice(2,11),money=n=>Number.isFinite(n)?`${Math.round(n*100)/100} pts`:'prix indisponible';
@@ -11,7 +11,8 @@ let state={name:'Ma force Iron Tide',front:'EST',period:'Late',year:1944,season:
 let view='army',search='',editId=null;
 const CATALOG_INDEX=new Map(DB.map(x=>[x.id,x]));
 const all=()=>DB.concat(state.custom),item=key=>CATALOG_INDEX.get(key)||state.custom.find(x=>x.id===key),corps=key=>state.corps.find(x=>x.id===key),formation=key=>state.corps.flatMap(c=>c.formations).find(f=>f.id===key);
-const opts=(arr,val)=>arr.map(x=>{let [v,label]=Array.isArray(x)?x:[x,x];return `<option value="${E(v)}" ${String(v)===String(val)?'selected':''}>${E(label)}</option>`}).join('');
+const normalizeExp=v=>typeof v==='string'&&/^entra[iî]n[eé]$/i.test(v.trim())?'Vétéran':v;
+const opts=(arr,val)=>arr.map(x=>{let [v,label]=Array.isArray(x)?x:[x,x];return `<option value="${E(v)}" ${String(v)===String(normalizeExp(val))?'selected':''}>${E(label)}</option>`}).join('');
 const sel=(key,arr,val,extra='')=>`<select data-action="${key}" ${extra}>${opts(arr,val)}</select>`;
 const field=(name,action,value,typ='text',extra='')=>`<label>${name}<input data-action="${action}" type="${typ}" value="${E(value)}" ${extra}></label>`;
 const chk=(label,act,checked,extra='')=>`<label class="check"><input type="checkbox" data-action="${act}" ${checked?'checked':''} ${extra}>${label}</label>`;
@@ -21,7 +22,7 @@ const isInf=f=>['inf','cav','genie','reserve','scout','horseScout','sniper'].inc
 const isEligibleAs=f=>isArmor(f)||isGun(f)||f.kind==='air';
 // Toutes les formations ont un coût structurel nul : seules les unités, options et supports sont facturés.
 function baseFormation(f){return 0}
-function adjust(base,exp,morale,osc,fan){if(base==null)return null;let tier=base<=100?0:base<=200?1:2;return base+(B.experience[exp==='Entraîné'?'Vétéran':exp]?.[tier]||0)+(B.morale[morale]||0)+(osc?B.morale.Oscillant:0)+(fan?B.morale.Fanatique:0)}
+function adjust(base,exp,morale,osc,fan){if(base==null)return null;let tier=base<=100?0:base<=200?1:2;return base+(B.experience[normalizeExp(exp)]?.[tier]||0)+(B.morale[morale]||0)+(osc?B.morale.Oscillant:0)+(fan?B.morale.Fanatique:0)}
 function unitPrice(f,u){let table=['cav','horseScout'].includes(f.kind)?B.cav:B.inf,extra=['cav','horseScout'].includes(f.kind)?B.cavOptions:B.infOptions;let n=(table[u.type]||0)+(u.command?(table.Commandement||0):0);for(let opt of u.options)n+=extra[opt]||0;let tr=item(u.transportId);if(tr){let p=tr.costs[state.period];if(p==null)return null;n+=p}return adjust(n,u.exp||f.exp,u.morale||f.morale,u.osc||f.osc,u.fan||f.fan)}
 function canAdaptTracks(x){return /^(chenill[eé]|semi[- ]?chenill[eé])/i.test(String(x?.traction||'').trim())}
 // Restrictions nationales et catégories, appliquées aussi aux anciennes sauvegardes.
@@ -163,7 +164,7 @@ function forts(){let total=state.independentForts.reduce((n,k)=>n+(B.fortificati
 let draft={kind:'inf',name:'Nouvelle unité',nation:'Allemagne',base:15,exp:'Vétéran',morale:'Vaillant',osc:false,fan:false,as:false,options:[],sourceId:''};
 function workshopPrice(){let n=Number(draft.base);if(!Number.isFinite(n))return null;for(let k of draft.options.filter(k=>allowedDraftOption(k)))n+= (B.infOptions[k]??B.cavOptions[k]??B.vehicleOptions[k]??B.gunOptions[k]??0);return adjust(n,draft.exp,draft.morale,draft.osc,draft.fan)}
 function workshop(){let options=draft.kind==='inf'?B.infOptions:draft.kind==='cav'?B.cavOptions:draft.kind==='gun'?B.gunOptions:B.vehicleOptions;let sources=all().filter(x=>x.nation===draft.nation&&((draft.kind==='gun'&&x.kind==='gun')||(draft.kind==='armor'&&x.kind==='armor')||(draft.kind==='transport'&&x.kind==='transport')||(draft.kind==='air'&&x.kind==='air')));return `<section class="panel"><h2>Calculateur universel</h2><p>Barèmes fixes du budget actualisé. Le blindage des véhicules existants est conservé : aucun éditeur de blindage. Les créations sont enregistrées comme copies personnelles.</p><div class="grid"><label>Catégorie${sel('draftKind',[['inf','Infanterie'],['cav','Cavalerie'],['armor','Véhicule blindé'],['gun','Canon / artillerie / AA'],['transport','Transport'],['air','Aviation'],['fort','Fortification'],['support','Support']],draft.kind)}</label><label>Nation${sel('draftNation',['Allemagne','URSS'],draft.nation)}</label>${field('Nom','draftName',draft.name)}<label>Charger une unité existante${sel('draftSource',[['','Nouvelle unité'],...sources.map(x=>[x.id,x.name])],draft.sourceId)}</label>${field('Coût de base officiel ou OdB (pts)','draftBase',draft.base,'number','step="0.01"')}<label>Expérience${sel('draftExp',EXPS.filter(x=>x!=='As'||['armor','gun','air'].includes(draft.kind)),draft.exp)}</label><label>Moral${sel('draftMorale',MORALES,draft.morale)}</label>${chk('Oscillant','draftOsc',draft.osc)}${chk('Fanatique','draftFan',draft.fan)}</div><details><summary>Traits et équipements (${draft.options.length})</summary><div class="options">${Object.entries(options).filter(([k])=>allowedDraftOption(k)).map(([k,v])=>chk(`${E(k)} (${money(v)})`,'draftOption',draft.options.includes(k),`data-value="${E(k)}"`)).join('')}</div></details><div class="stats"><div><small>Prix recalculé</small><b>${money(workshopPrice())}</b></div><div><small>Coût de base</small><b>${money(Number(draft.base))}</b></div></div><div class="toolbar"><button data-action="draftSave">Enregistrer dans ma bibliothèque</button><button data-action="draftReset">Nouvelle fiche</button></div><p class="muted">Le calculateur applique les suppléments d’expérience par tranche (0–100 / 101–200 / plus de 200) et le moral du budget. Les caractéristiques techniques des matériels créés doivent être renseignées dans leurs fiches de référence ; les prix ne sont pas extrapolés automatiquement.</p><h3>Bibliothèque personnalisée (${state.custom.length})</h3>${state.custom.map(x=>`<div class="line unit"><span>${E(x.name)} · ${E(x.nation)} · ${money(x.costs?.[state.period])}</span><button data-action="deleteCustom" data-id="${x.id}" class="small danger">Supprimer</button></div>`).join('')}</section>${saveMarkup()}`}
-function render(){const expanded=[...document.querySelectorAll('#app details')].map((el,i)=>el.open?i:-1).filter(i=>i>=0);document.title='Iron Tide — Army Builder V0.5.1';$('app').innerHTML=header()+`<main>${view==='army'?army():view==='workshop'?workshop():forts()}</main>`;const details=document.querySelectorAll('#app details');for(const i of expanded)if(details[i])details[i].open=true;}
+function render(){const expanded=[...document.querySelectorAll('#app details')].map((el,i)=>el.open?i:-1).filter(i=>i>=0);document.title='Iron Tide — Army Builder V0.5.4';$('app').innerHTML=header()+`<main>${view==='army'?army():view==='workshop'?workshop():forts()}</main>`;const details=document.querySelectorAll('#app details');for(const i of expanded)if(details[i])details[i].open=true;}
 function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)}
 function update(e){let el=e.target,a=el.dataset.action;if(!a)return;let f=formation(el.dataset.f),c=corps(el.dataset.c),u=f?.units.find(x=>x.id===el.dataset.u),m=f?.models.find(x=>x.id===el.dataset.m),v=el.type==='checkbox'?el.checked:el.value,choice=el.dataset.value;
  if(a==='listName')state.name=v;else if(['front','period','season'].includes(a))state[a]=v;else if(['year','budget','fortBudget'].includes(a))state[a]=Number(v);
@@ -202,9 +203,19 @@ function click(e){let el=e.target.closest('button[data-action]');if(!el)return;l
  else if(a==='draftSave'){let p=workshopPrice();if(p==null)return alert('Prix invalide');let orig=item(draft.sourceId);let x={...(orig||{}),id:'custom-'+id(),name:draft.name||'Nouvelle unité',nation:draft.nation,kind:orig?.kind||(draft.kind==='gun'?'gun':draft.kind==='air'?'air':draft.kind==='transport'?'transport':draft.kind==='armor'?'armor':'support'),type:orig?.type||draft.kind,subtype:orig?.subtype||draft.kind,armor:orig?.armor||'',weapon:orig?.weapon||'',rarity:orig?.rarity||0,roleKey:orig?.roleKey||'art',armorRole:orig?.armorRole||'other',mounting:orig?.mounting||'tracté',costs:{Early:p,Mid:p,Late:p},custom:true,source:'Bibliothèque personnelle',sourceRow:0};state.custom.push(x);alert('Fiche ajoutée à la bibliothèque personnelle. Son prix est fixe pour les trois périodes jusqu’à modification.')}
  else if(a==='deleteCustom')state.custom=state.custom.filter(x=>x.id!==el.dataset.id);
  else if(a==='save'){localStorage.setItem('iron-tide-v03',JSON.stringify(state));alert('Liste sauvegardée dans ce navigateur.')}
- else if(a==='export')download('Iron_Tide_liste_V0.5.1.json',JSON.stringify({version:'0.5.1',state},null,2),'application/json');else if(a==='print')window.print();else if(a==='reset'){if(confirm('Effacer la liste en cours ?')){localStorage.removeItem('iron-tide-v03');location.reload()}return}
+ else if(a==='export')download('Iron_Tide_liste_V0.5.4.json',JSON.stringify({version:'0.5.4',state},null,2),'application/json');else if(a==='print')window.print();else if(a==='reset'){if(confirm('Effacer la liste en cours ?')){localStorage.removeItem('iron-tide-v03');location.reload()}return}
  render();}
-document.addEventListener('change',e=>{if(e.target.id==='import'){let file=e.target.files?.[0];if(!file)return;file.text().then(t=>{try{let o=JSON.parse(t),s=o.state||o;if(!Array.isArray(s.corps))throw Error('Format incompatible : corps manquants');state={...state,...s};render()}catch(err){alert('Import impossible : '+err.message)}});return}update(e)});
+// Migration de toutes les valeurs historiques, y compris dans les sauvegardes et les imports.
+function migrateExperience(value){
+ if(!value||typeof value!=='object')return value;
+ if(Array.isArray(value)){for(const child of value)migrateExperience(child);return value;}
+ for(const [key,child] of Object.entries(value)){
+  if(['exp','escortExp'].includes(key))value[key]=normalizeExp(child);
+  else if(child&&typeof child==='object')migrateExperience(child);
+ }
+ return value;
+}
+document.addEventListener('change',e=>{if(e.target.id==='import'){let file=e.target.files?.[0];if(!file)return;file.text().then(t=>{try{let o=JSON.parse(t),s=o.state||o;if(!Array.isArray(s.corps))throw Error('Format incompatible : corps manquants');state=migrateExperience({...state,...s});render()}catch(err){alert('Import impossible : '+err.message)}});return}update(e)});
 document.addEventListener('click',click);
-try{let saved=localStorage.getItem('iron-tide-v03');if(saved){let s=JSON.parse(saved);if(Array.isArray(s.corps))state={...state,...s}}}catch(e){console.warn('Sauvegarde illisible',e)}
+try{let saved=localStorage.getItem('iron-tide-v03');if(saved){let s=JSON.parse(saved);if(Array.isArray(s.corps))state=migrateExperience({...state,...s})}}catch(e){console.warn('Sauvegarde illisible',e)}
 render();
