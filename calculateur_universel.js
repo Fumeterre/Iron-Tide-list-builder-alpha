@@ -27,14 +27,14 @@ function compute(){
  requireValue(Object.hasOwn(R.morale,C.morale),'Moral non reconnu dans le Budget détaillé');
  if(C.kind==='armor'||C.kind==='transport'){requireValue(!C.armorEnabled||(Object.hasOwn(R.armor,String(C.front))&&Object.hasOwn(R.armor,String(C.side))),'Blindage hors barème officiel');}
  if(['armor','transport','gun','air'].includes(C.kind)&&C.mainWeapon!=='MG')requireValue(Object.hasOwn(R.ac,String(C.ac)),'AC absent du barème officiel');
- const add=(label,n)=>{if(!Number.isFinite(n)){warn.push(`Barème manquant : ${label}`);return}parts.push({label,amount:n})};
+ const add=(label,n)=>{if(!Number.isFinite(n)){warn.push(`Barème manquant : ${label}`);invalid.push(`Barème manquant : ${label}`);return}parts.push({label,amount:n})};
  let price=0;
  const dice=num(C.d6)*3+num(C.d8)*5+num(C.d10)*8;
  const ac=R.ac[String(C.ac)];
- const priceArmor=()=>{const f=R.armor[String(C.front)],l=R.armor[String(C.side)];if(!f||!l){warn.push('Indices de blindage hors barème (9 à 20)');return}add('Blindage frontal + latéral et primes',f.front+l.side+num(f.frontBonus)+num(l.sideBonus))};
+ const priceArmor=()=>{const f=R.armor[String(C.front)],l=R.armor[String(C.side)];if(!f||!l){warn.push('Indices de blindage hors barème (9 à 20)');invalid.push('Blindage hors barème');return}add('Blindage frontal + latéral et primes',f.front+l.side+num(f.frontBonus)+num(l.sideBonus))};
  if(C.kind==='inf'||C.kind==='cav'){
   const t=C.kind==='inf'?R.inf:R.cav;
-  add('Catégorie d’unité (armement organique inclus)',t[C.baseCategory]??t['Ligne']);
+  if(!Object.hasOwn(t,C.baseCategory)){invalid.push('Catégorie d’infanterie/cavalerie inconnue');warn.push('Catégorie inconnue')}else add('Catégorie d’unité (armement organique inclus)',t[C.baseCategory]);
   if(C.command)add('Supplément commandement',num(t.Commandement));
  }else if(C.kind==='support'){
   if(typeof R.support[C.supportType]==='number')add('Support (servants compris)',R.support[C.supportType]);
@@ -58,9 +58,9 @@ function compute(){
   warn.push('Fortification : tarif manuel, à vérifier selon Doctrine');invalid.push('Fortification non calculée automatiquement')
  }
  const traitMap=extraTraits();
- for(const name of C.traits){if(typeof traitMap[name]==='number')add(`Trait / équipement : ${name}`,traitMap[name]);else warn.push(`Trait sans tarif numérique : ${name}`)}
+ for(const name of C.traits){if(typeof traitMap[name]==='number')add(`Trait / équipement : ${name}`,traitMap[name]);else {warn.push(`Trait sans tarif numérique : ${name}`);invalid.push(`Trait non tarifé : ${name}`)}}
  if(C.ammo&&C.kind!=='inf'&&C.kind!=='cav'&&C.kind!=='fort'){
-  const a=R.munitions[C.ammo];if(a){add(`Munition ${C.ammo} (${C.ammoMode})`,num(a[C.ammoMode]));}else warn.push('Munition absente du barème');
+  const a=R.munitions[C.ammo];if(a){add(`Munition ${C.ammo} (${C.ammoMode})`,num(a[C.ammoMode]));}else {warn.push('Munition absente du barème');invalid.push('Munition non tarifée')}
  }
  let subtotal=parts.reduce((s,x)=>s+x.amount,0);
  if(C.kind==='armor'||C.kind==='transport'){
@@ -128,7 +128,7 @@ const saveCustom=()=>{
  if(r.warn.length&&!confirm('Des points nécessitent une vérification. Enregistrer tout de même une copie personnelle non officielle ?'))return;
  const orig=C.sourceId?item(C.sourceId):null;
  const kind=orig?.kind||({armor:'armor',gun:'gun',air:'air',transport:'transport',inf:'inf',cav:'cav',support:'support',fort:'fort'}[C.kind]);
- const x={...(orig||{}),id:'custom-'+id(),name:C.name.trim()||'Nouvelle unité',nation:C.nation,kind,type:orig?.type||C.kind,rarity:orig?.rarity||0,costs:{Early:r.total,Mid:r.total,Late:r.total},priceStatus:'simulation_personnelle_non_officielle',custom:true,source:'Calculateur universel — copie personnelle',calculator:{inputs:structuredClone(C),result:r,source:R.source},sourceRow:0};
+ const x={...(orig||{}),id:'custom-'+id(),name:C.name.trim()||'Nouvelle unité',nation:C.nation,kind,type:orig?.type||C.kind,rarity:orig?.rarity||0,costs:{Early:r.total,Mid:r.total,Late:r.total},priceStatus:'simulation_personnelle_non_officielle',budgetVerification:{status:'provisoire',allowInLists:true,reconciled:false,authority:R.source},custom:true,source:'Calculateur universel — copie personnelle',calculator:{inputs:structuredClone(C),result:r,source:R.source},sourceRow:0};
  state.custom.push(x);alert('Copie personnelle créée. Coût enregistré fixe : '+fmt(r.total)+' (ne remplace aucun tarif officiel).');render();
 };
 document.addEventListener('change',e=>{
