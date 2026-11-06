@@ -1,0 +1,1042 @@
+{
+  "sources": {
+    "budget": "Iron_Tide BUDGET DETAILLE(4).xlsx",
+    "equipment": "Equipement par véhicule(2).xlsx",
+    "germany": "OdB_Allemagne_V9(1).xlsx",
+    "ussr": "OdB_URSS_V9(2).xlsx"
+  },
+  "sha256": {
+    "budget": "6f487c6b9e9033e0c3a490a9ef63946dbe2fbc7bbb5e0f279d35c1fbdaadb539",
+    "equipment": "9d7d7e00a97d06da72ab37ca9c511381e44b99121ff212026ca3525b402b8fa2",
+    "germany": "dc2c467e0fb1c01ab7e9cb66666b29ae10798ecbffd0d89d38f3b80739db114f",
+    "ussr": "a41e95e0c72e28a8d53bff564db0ea18c00a93ffdc5c1b607380c6ffc7c8791f"
+  },
+  "barèmes_mis_a_jour": [
+    [
+      "TRAITS EQUIPEMENTS VEHICULES",
+      "Casemate ouverte",
+      -10.0,
+      0.0
+    ],
+    [
+      "TRAITS EQUIPEMENTS VEHICULES",
+      "Casemate ouverte",
+      0.0,
+      -10.0
+    ]
+  ],
+  "catalogue_entries": 493,
+  "source_rows_matched": 298,
+  "base_cost_conflicts": [],
+  "invalid_legacy_prices_suppressed": [
+    {
+      "unit": "Sd.Kfz. 251/16",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 251/16",
+      "nation": "Allemagne",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 7 (8t)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 7 (8t)",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 7 (8t)",
+      "nation": "Allemagne",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 10 (1t)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 10 (1t)",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Sd.Kfz. 10 (1t)",
+      "nation": "Allemagne",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Raupenschlepper Ost (RSO)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Maultier (Sd.Kfz. 3)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Maultier (Sd.Kfz. 3)",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Maultier (Sd.Kfz. 3)",
+      "nation": "Allemagne",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Volkswagen Schwimmwagen",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Radschlepper Ost (Škoda RSO / Porsche 175)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Radschlepper Ost (Škoda RSO / Porsche 175)",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Radschlepper Ost (Škoda RSO / Porsche 175)",
+      "nation": "Allemagne",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "7.5 cm Pak 40",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "7.5 cm Pak 97/38",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "7.5 cm Pak 41",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "8.8 cm Pak 43",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "12.8 cm Pak 44 **",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "12.8 cm Pak 44 **",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "12.8 cm Flak 40",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "15 cm Flak (navy-manned, static) **",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "12 cm GrW 42",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "21 cm Nebelwerfer 42",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "30 cm Nebelwerfer 42",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Panzerwerfer 42 (Sd.Kfz. 4/1)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Schwerer Gustav (80 cm) **",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-2",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-4",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (R I)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (R II)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (R III)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (R IV)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (R VI)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (U3)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 109 G-6 (U4)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 110 C-7",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 110 G-2",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Bf 110 G-4",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Do 217 E",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Do 217 M",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Do 217 N",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 A",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 A-4 (U1)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 A-6",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 A-7",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 F-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Fw 190 G-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "He 111 H-16",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "He 111 H-16 (U)",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "He 111 H-20/H-22",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Hs 129 B",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 188 E-1/E-2",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 188 F-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 87 D-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 87 D-3",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 87 D-5",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 87 G-1 *",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 87 G-2 *",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 A-14/A-15",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 A-14/A-15",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 A-17",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 C-6",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 D-4",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 D-4",
+      "nation": "Allemagne",
+      "period": "Mid",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 G-1/G-6",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 P-1 *",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 S-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Ju 88 T-1",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "Me 210 A-1 ***",
+      "nation": "Allemagne",
+      "period": "Early",
+      "invalid": 1460.0
+    },
+    {
+      "unit": "T-60 1942",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-70",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-80 light tank **",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/76 mod. 1942",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/76 mod. 1943 hexagonal turret",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "OT-34",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 mod. 1943 D-5T *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 mod. 1943 D-5T *",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 mod. 1944 ZiS-S-53",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 mod. 1944 ZiS-S-53",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 command",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-34/85 command",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV-1S",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV-8",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV-85",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-1 / IS-85",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-2 mod. 1943 stepped hull",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-2 mod. 1944 sloped front",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-2 mod. 1944 sloped front",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-3 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "IS-3 ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-76",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-76M",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-85",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-85M *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-85M *",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-100 *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-122 *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-152",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ISU-152",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ISU-152",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ISU-122 *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ISU-122 *",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ISU-122S **",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "StuG III F(capturé) *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "StuG III D/E(capturé) *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-76i (sur StuG III / Pz III capturé) *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Marder II (capturé) **",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "M3 Stuart / M3A1 (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "M3 Lee (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "M4A2 Sherman 75mm (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "M4A2 Sherman 75mm (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Valentine Mk II/III (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Matilda II (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Universal Carrier (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T48 / SU-57 (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV-220 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV-220 ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 704 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 704 ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-44/85 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-44/85 ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "A-20",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-43",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-43",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-43",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "T-54 mod. 1947 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV 3 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV 5 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KV 5 ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 701 (IS-4 proto) ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 701 (IS-4 proto) ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 701 (IS-4 proto) ***",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 260 (IS-7 proto) ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 260 (IS-7 proto) ***",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Object 260 (IS-7 proto) ***",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "SU-122-54 ***",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Panzer IV Ausf. G/H *",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Panzer IV Ausf. J **",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Panzer IV Ausf. J **",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "GAZ-67",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Studebaker US6 (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Studebaker US6 (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "Studebaker US6 (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "M3 Halftrack (Lend-Lease)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ZiS-5 Truck",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 0.0
+    },
+    {
+      "unit": "ZiS-5 Truck",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 0.0
+    },
+    {
+      "unit": "ZiS-5 Truck",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 0.0
+    },
+    {
+      "unit": "ZIS-42 Halftrack",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Dodge WC (LL)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "Ford GPA (LL)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "GMC CCKW (LL)",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "ZiS-3 76mm",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "BS-3 100mm",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "BS-3 100mm",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "160mm Mortar",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "BM-31 Katyusha",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "BM-31 Katyusha",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KS-19 100mm",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KS-19 100mm",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "KS-19 100mm",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "152mm M1909/30 / M-10 / D-1",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "85mm D-44",
+      "nation": "URSS",
+      "period": "Early",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "85mm D-44",
+      "nation": "URSS",
+      "period": "Mid",
+      "invalid": 1043.0
+    },
+    {
+      "unit": "85mm D-44",
+      "nation": "URSS",
+      "period": "Late",
+      "invalid": 1043.0
+    }
+  ],
+  "catalogue_prices_status": "PROVISOIRE: tarifs périodiques du code V0.9 non certifiés par recalcul ligne à ligne avec le Budget détaillé"
+}

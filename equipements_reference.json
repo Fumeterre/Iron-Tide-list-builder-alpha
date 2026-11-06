@@ -1,0 +1,243 @@
+{
+  "source": "Equipement par véhicule(2).xlsx",
+  "rows": [
+    {
+      "A": "Char léger",
+      "B": "Points",
+      "E": "Char d'assaut",
+      "F": "Points",
+      "H": "Véhicule (transport 1)",
+      "I": "Points"
+    },
+    {
+      "A": "/ MG antiaérienne",
+      "B": "5",
+      "E": "Schürzen",
+      "F": "5",
+      "H": "/ MG antiaérienne",
+      "I": "5"
+    },
+    {
+      "A": "/ HMG antiéaérienne",
+      "B": "7",
+      "E": "Optique IR",
+      "F": "10",
+      "H": "/ HMG antiéaérienne",
+      "I": "7"
+    },
+    {
+      "A": "Plateforme radio",
+      "B": "7",
+      "E": "/ MG antiaérienne",
+      "F": "5",
+      "H": "Chenilles adaptées",
+      "I": "5"
+    },
+    {
+      "A": "Chenilles adaptées",
+      "B": "5",
+      "E": "/ HMG antiéaérienne",
+      "F": "7",
+      "H": "transport de munition",
+      "I": "5"
+    },
+    {
+      "E": "Chenilles adaptées",
+      "F": "5",
+      "H": "Plateforme radio",
+      "I": "7"
+    },
+    {
+      "H": "Véhicule (transport 1)",
+      "I": "Points"
+    },
+    {
+      "H": "/ MG antiaérienne",
+      "I": "5"
+    },
+    {
+      "H": "/ HMG antiéaérienne",
+      "I": "7"
+    },
+    {
+      "A": "Char Moyen",
+      "B": "Points",
+      "E": "Chasseur de char",
+      "F": "Points",
+      "H": "Chenilles adaptées",
+      "I": "5"
+    },
+    {
+      "A": "Schürzen",
+      "B": "5",
+      "E": "Télémètre",
+      "F": "10",
+      "H": "transport de munition",
+      "I": "5"
+    },
+    {
+      "A": "Optique IR",
+      "B": "10",
+      "E": "Schürzen",
+      "F": "5",
+      "H": "Plateforme radio",
+      "I": "7"
+    },
+    {
+      "A": "/ MG antiaérienne",
+      "B": "5",
+      "E": "Optique IR",
+      "F": "10",
+      "H": "Plateforme de réparation",
+      "I": "7"
+    },
+    {
+      "A": "/ HMG antiéaérienne",
+      "B": "7",
+      "E": "/ MG antiaérienne",
+      "F": "5"
+    },
+    {
+      "A": "Plateforme radio",
+      "B": "7",
+      "E": "/ HMG antiéaérienne",
+      "F": "7",
+      "H": "Automitrailleuse Roue",
+      "I": "Points",
+      "J": "remarque"
+    },
+    {
+      "A": "Chenilles adaptées",
+      "B": "5",
+      "E": "Chenilles adaptées",
+      "F": "5",
+      "H": "Plateforme radio",
+      "I": "7"
+    },
+    {
+      "H": "HMG",
+      "I": "5",
+      "J": "remplace armement MG principal"
+    },
+    {
+      "A": "Char Lourd",
+      "B": "Points",
+      "E": "Canon automoteur",
+      "F": "Points",
+      "H": "/ MG antiaérienne",
+      "I": "5"
+    },
+    {
+      "A": "Schürzen",
+      "B": "5",
+      "E": "Télémètre",
+      "F": "10",
+      "H": "/ HMG antiéaérienne",
+      "I": "7"
+    },
+    {
+      "A": "Optique IR",
+      "B": "10",
+      "E": "/ MG antiaérienne",
+      "F": "5"
+    },
+    {
+      "A": "/ MG antiaérienne",
+      "B": "5",
+      "E": "/ HMG antiéaérienne",
+      "F": "7"
+    },
+    {
+      "A": "/ HMG antiéaérienne",
+      "B": "7",
+      "E": "Chenilles adaptées",
+      "F": "5"
+    },
+    {
+      "A": "Plateforme radio",
+      "B": "7"
+    },
+    {
+      "A": "Chenilles adaptées",
+      "B": "5"
+    },
+    {
+      "A": "Char Génie",
+      "B": "Points"
+    },
+    {
+      "A": "Option de base",
+      "C": "Option ouverte "
+    },
+    {
+      "A": "Équipement génie",
+      "B": "0",
+      "C": "/ 2xtraverse",
+      "D": "3",
+      "E": "/Pont",
+      "F": "5",
+      "G": "/Fascine",
+      "H": "5"
+    },
+    {
+      "A": "Lames Rhino",
+      "B": "5"
+    },
+    {
+      "A": "Lame bulldozer",
+      "B": "10"
+    },
+    {
+      "A": "Roll Miner",
+      "B": "15"
+    },
+    {
+      "A": "Masses Crab",
+      "B": "15"
+    },
+    {
+      "A": "Chenilles adaptées",
+      "B": "5"
+    },
+    {
+      "A": "Véhicule Reco semi-chenillé",
+      "B": "Points",
+      "C": "remarque"
+    },
+    {
+      "A": "Plateforme radio",
+      "B": "7"
+    },
+    {
+      "A": "HMG",
+      "B": "5",
+      "C": "remplace armement MG principal"
+    },
+    {
+      "A": "/ MG antiaérienne",
+      "B": "5"
+    },
+    {
+      "A": "/ HMG antiéaérienne",
+      "B": "7"
+    },
+    {
+      "A": "Chenilles adaptées"
+    },
+    {
+      "A": "Trait équipement",
+      "B": "Points"
+    },
+    {
+      "A": "/ 2 MMG/MHG jumelée"
+    },
+    {
+      "A": "gagne Arme Jumelée (+1)",
+      "B": "5"
+    },
+    {
+      "A": "Gagne Anti infanterie (+1)",
+      "B": "10"
+    }
+  ]
+}
