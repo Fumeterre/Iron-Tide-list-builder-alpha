@@ -20,6 +20,13 @@ const extraTraits=()=>C.kind==='inf'?R.infTraits:C.kind==='cav'?R.cavTraits:C.ki
 const uniqueTraits=()=>Object.entries(extraTraits()).filter(([k,v])=>Number.isFinite(v)&&!['Casemate ouverte'].includes(k)||k==='Casemate ouverte').filter(([k],i,arr)=>arr.findIndex(([j])=>j===k)===i);
 function compute(){
  const parts=[],warn=[];
+ const invalid=[];
+ const requireValue=(condition,message)=>{if(!condition){invalid.push(message);warn.push(message)}};
+ requireValue(Object.hasOwn(R.period,C.period),'Période non reconnue dans le Budget détaillé');
+ requireValue(Object.hasOwn(R.experience,C.exp),'Expérience non reconnue dans le Budget détaillé');
+ requireValue(Object.hasOwn(R.morale,C.morale),'Moral non reconnu dans le Budget détaillé');
+ if(C.kind==='armor'||C.kind==='transport'){requireValue(!C.armorEnabled||(Object.hasOwn(R.armor,String(C.front))&&Object.hasOwn(R.armor,String(C.side))),'Blindage hors barème officiel');}
+ if(['armor','transport','gun','air'].includes(C.kind)&&C.mainWeapon!=='MG')requireValue(Object.hasOwn(R.ac,String(C.ac)),'AC absent du barème officiel');
  const add=(label,n)=>{if(!Number.isFinite(n)){warn.push(`Barème manquant : ${label}`);return}parts.push({label,amount:n})};
  let price=0;
  const dice=num(C.d6)*3+num(C.d8)*5+num(C.d10)*8;
@@ -31,7 +38,7 @@ function compute(){
   if(C.command)add('Supplément commandement',num(t.Commandement));
  }else if(C.kind==='support'){
   if(typeof R.support[C.supportType]==='number')add('Support (servants compris)',R.support[C.supportType]);
-  else warn.push('Ce support possède une formule spécifique non chiffrée : vérifier le Budget détaillé');
+  else {warn.push('Ce support possède une formule spécifique non chiffrée : vérifier le Budget détaillé');invalid.push('Support non chiffrable avec les paramètres actuels')}
  }else if(C.kind==='armor'||C.kind==='transport'){
   if(C.armorEnabled)priceArmor();else add('Véhicule non blindé',R.vehicle['Véhicule non blindé']);
   add('Taille',vehicleSections.size[C.size]);add('Traction',vehicleSections.traction[C.traction]);add('Vitesse',vehicleSections.speed[C.speed]);
@@ -48,7 +55,7 @@ function compute(){
   add('Munitions supplémentaires',Math.max(0,num(C.extraAmmo))*num(R.aviation['/ munitions supplémentaire']));
  }else if(C.kind==='fort'){
   add('Coût de fortification saisi (barème non universalisé)',num(C.manualBase));
-  warn.push('Fortification : vérifier le tarif exact et l’autorisation par Doctrine');
+  warn.push('Fortification : tarif manuel, à vérifier selon Doctrine');invalid.push('Fortification non calculée automatiquement')
  }
  const traitMap=extraTraits();
  for(const name of C.traits){if(typeof traitMap[name]==='number')add(`Trait / équipement : ${name}`,traitMap[name]);else warn.push(`Trait sans tarif numérique : ${name}`)}
@@ -59,7 +66,8 @@ function compute(){
  if(C.kind==='armor'||C.kind==='transport'){
   const mult=vehicleSections.category[C.category];
   if(C.kind==='armor'){
-   const after=Math.ceil(subtotal*mult);add(`Indice véhicule (${mult} ×, arrondi supérieur)`,after-subtotal);subtotal=after;
+   if(!Number.isFinite(mult)){invalid.push('Catégorie de véhicule inconnue');warn.push('Catégorie de véhicule inconnue')}
+   const after=Math.ceil(subtotal*(Number.isFinite(mult)?mult:1));add(`Indice véhicule (${mult} ×, arrondi supérieur)`,after-subtotal);subtotal=after;
   }
  }
  if(C.kind==='air'){
@@ -73,7 +81,7 @@ function compute(){
  }
  subtotal=parts.reduce((s,x)=>s+x.amount,0);
  const beforePeriod=subtotal;
- const periodFactor=R.period[C.period]||1;
+ const periodFactor=R.period[C.period]??1;
  if(periodFactor!==1)add(`Période (${periodFactor}×)`,subtotal*periodFactor-subtotal);
  subtotal=parts.reduce((s,x)=>s+x.amount,0);
  const exp=R.experience[C.exp];
@@ -83,8 +91,8 @@ function compute(){
  if(C.fan)add('Fanatique',num(R.morale.Fanatique));
  const total=parts.reduce((s,x)=>s+x.amount,0);
  if(C.kind==='armor'&&C.sourceId)warn.push('Véhicule existant : comparaison indicative uniquement, le blindage de la référence ne doit pas être modifié');
- if(total<0)warn.push('Coût négatif : vérifier les entrées et les coefficients');
- return {parts,warn,total:Math.max(0,Math.ceil(total)),beforePeriod};
+ if(total<0){warn.push('Coût négatif : vérifier les entrées et les coefficients');invalid.push('Coût négatif')}
+ return {parts,warn,total:invalid.length?null:Math.ceil(total),beforePeriod,valid:invalid.length===0,blocking:invalid};
 }
 function calcHTML(){
  if(!C.baseCategory)C.baseCategory='Ligne';if(!C.supportType)C.supportType='MMG';
@@ -106,17 +114,18 @@ function calcHTML(){
  ${group('Période, expérience et moral',select('Période','period',R.period)+select('Expérience','exp',Object.fromEntries(Object.keys(R.experience).filter(k=>!isInf||k!=='As').map(k=>[k,1])))+select('Moral','morale',R.morale)+`<label class="check"><input type="checkbox" data-calc="osc" ${C.osc?'checked':''}> Oscillant</label><label class="check"><input type="checkbox" data-calc="fan" ${C.fan?'checked':''}> Fanatique</label>`)}
  <fieldset class="it-calc-fieldset"><legend>Traits et équipements (hors armement standard)</legend><div class="it-calc-traits">${uniqueTraits().map(([name,value])=>`<label class="check"><input type="checkbox" data-calc-trait="${escape(name)}" ${C.traits.includes(name)?'checked':''}> ${escape(name)} (${value>0?'+':''}${value})</label>`).join('')}</div></fieldset>
  ${sourceRecord?`<p class="muted"><strong>Statut tarif OdB :</strong> ${escape(refStatus)}. Une comparaison ne valide pas le calcul.</p>`:''}
- <div class="it-calc-result"><div><small>Prix calculé</small><strong>${fmt(result.total)}</strong></div><div><small>Prix OdB (${escape(state.period)})</small><strong>${fmt(refPrice)}</strong></div><div><small>Écart calcul / OdB</small><strong>${refPrice==null?'Non comparable':fmt(result.total-refPrice)}</strong></div></div>
+ <div class="it-calc-result"><div><small>Prix calculé</small><strong>${fmt(result.total)}</strong></div><div><small>Prix OdB (${escape(state.period)})</small><strong>${fmt(refPrice)}</strong></div><div><small>Écart calcul / OdB</small><strong>${refPrice==null||!result.valid?'Non comparable':fmt(result.total-refPrice)}</strong></div></div>
  <details open><summary>Décomposition du calcul (${result.parts.length} lignes)</summary><table class="it-calc-table"><tbody>${result.parts.map(p=>`<tr><td>${escape(p.label)}</td><td>${p.amount>=0?'+':''}${Math.round(p.amount*100)/100}</td></tr>`).join('')}</tbody><tfoot><tr><th>Total arrondi</th><th>${fmt(result.total)}</th></tr></tfoot></table></details>
  ${result.warn.length?`<div class="it-calc-warnings"><strong>Vérifications nécessaires</strong><ul>${result.warn.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></div>`:''}
- <div class="toolbar"><button type="button" data-calcclick="save">Créer une copie personnelle</button><button type="button" data-calcclick="export">Exporter la simulation JSON</button><button type="button" data-calcclick="reset">Réinitialiser</button></div>
+ <div class="toolbar"><button type="button" data-calcclick="save" ${!result.valid?'disabled title="Calcul incomplet"':''}>Créer une copie personnelle</button><button type="button" data-calcclick="export">Exporter la simulation JSON</button><button type="button" data-calcclick="reset">Réinitialiser</button></div>
  <p class="muted">Le calculateur n’altère pas les blindages des références OdB. Une copie personnelle ne remplace pas un budget officiel. Les tarifs non numériques ou ambigus sont signalés, jamais inventés.</p>
  <h3>Références personnalisées (${state.custom.length})</h3>${state.custom.map(x=>`<div class="line unit"><span>${escape(x.name)} — ${fmt(x.costs?.[state.period])}</span><button class="small danger" data-action="deleteCustom" data-id="${escape(x.id)}">Supprimer</button></div>`).join('')}</section>`;
 }
 const originalRender=render;
 render=function(){originalRender();if(view==='workshop'){const main=document.querySelector('#app main');if(main)main.innerHTML=calcHTML();}};
 const saveCustom=()=>{
- const r=compute();if(r.warn.length&&!confirm('Des points nécessitent une vérification. Enregistrer tout de même une copie personnelle non officielle ?'))return;
+ const r=compute();if(!r.valid){alert('Calcul incomplet : impossible d’enregistrer un prix non fiable. '+r.blocking.join('; '));return}
+ if(r.warn.length&&!confirm('Des points nécessitent une vérification. Enregistrer tout de même une copie personnelle non officielle ?'))return;
  const orig=C.sourceId?item(C.sourceId):null;
  const kind=orig?.kind||({armor:'armor',gun:'gun',air:'air',transport:'transport',inf:'inf',cav:'cav',support:'support',fort:'fort'}[C.kind]);
  const x={...(orig||{}),id:'custom-'+id(),name:C.name.trim()||'Nouvelle unité',nation:C.nation,kind,type:orig?.type||C.kind,rarity:orig?.rarity||0,costs:{Early:r.total,Mid:r.total,Late:r.total},priceStatus:'simulation_personnelle_non_officielle',custom:true,source:'Calculateur universel — copie personnelle',calculator:{inputs:structuredClone(C),result:r,source:R.source},sourceRow:0};
