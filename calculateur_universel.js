@@ -5,7 +5,7 @@
 const R=window.IRON_BUDGET_REFERENCE;
 if(!R){console.error('Barèmes officiels absents');return}
 const num=(v,d=0)=>{const n=Number(v);return Number.isFinite(n)?n:d};
-const fmt=n=>Number.isFinite(n)?`${Math.round(n*100)/100} pts`:'Indisponible';
+const fmt=n=>n!==null&&n!==undefined&&Number.isFinite(Number(n))?`${Math.round(n*100)/100} pts`:'Indisponible';
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const mapOptions=(map,chosen)=>Object.keys(map).map(k=>`<option value="${escape(k)}" ${k===String(chosen)?'selected':''}>${escape(k)}</option>`).join('');
 const field=(label,key,type='number',step='1')=>`<label>${escape(label)}<input data-calc="${key}" type="${type}" ${type==='number'?`step="${step}"`:''} value="${escape(C[key])}"></label>`;
@@ -90,9 +90,11 @@ function calcHTML(){
  if(!C.baseCategory)C.baseCategory='Ligne';if(!C.supportType)C.supportType='MMG';
  const result=compute();
  const isVehicle=['armor','transport'].includes(C.kind),isInf=['inf','cav'].includes(C.kind),isWeapon=['armor','transport','gun','air'].includes(C.kind);
- const names={...R.inf};
+ 
  const sourceList=DB.filter(x=>x.nation===C.nation&&(['armor','transport','gun','air'].includes(x.kind))).slice(0,1000);
  const refPrice=C.sourceId?item(C.sourceId)?.costs?.[state.period]:null;
+ const sourceRecord=C.sourceId?item(C.sourceId):null;
+ const refStatus=sourceRecord?.priceStatus||'non_documenté';
  return `<section class="panel it-calculator"><h2>Calculateur universel — Budget détaillé</h2><p>Calcul paramétrique distinct de la bibliothèque officielle. Tous les barèmes chiffrés proviennent du classeur « ${escape(R.source)} ». Les références existantes ne sont jamais réécrites automatiquement.</p>
  ${group('Identification',select('Type d’unité','kind',types)+field('Nom de la référence','name','text')+select('Nation','nation',{'Allemagne':1,'URSS':1})+`<label>Comparer avec une référence OdB<select data-calc="sourceId"><option value="">Aucune</option>${sourceList.map(x=>`<option value="${escape(x.id)}" ${x.id===C.sourceId?'selected':''}>${escape(x.name)}</option>`).join('')}</select></label>`)}
  ${isInf?group('Infanterie / cavalerie',select('Catégorie','baseCategory',C.kind==='inf'?R.inf:R.cav)+`<label class="check"><input type="checkbox" data-calc="command" ${C.command?'checked':''}> Commandement (+ coût spécifique)</label>`):''}
@@ -103,6 +105,7 @@ function calcHTML(){
  ${isWeapon?group('Munitions',select('Munition','ammo',{'':'Aucune',...Object.fromEntries(Object.keys(R.munitions).map(k=>[k,1]))})+select('Dotation','ammoMode',{'constant':0,'optional':1})):''}
  ${group('Période, expérience et moral',select('Période','period',R.period)+select('Expérience','exp',Object.fromEntries(Object.keys(R.experience).filter(k=>!isInf||k!=='As').map(k=>[k,1])))+select('Moral','morale',R.morale)+`<label class="check"><input type="checkbox" data-calc="osc" ${C.osc?'checked':''}> Oscillant</label><label class="check"><input type="checkbox" data-calc="fan" ${C.fan?'checked':''}> Fanatique</label>`)}
  <fieldset class="it-calc-fieldset"><legend>Traits et équipements (hors armement standard)</legend><div class="it-calc-traits">${uniqueTraits().map(([name,value])=>`<label class="check"><input type="checkbox" data-calc-trait="${escape(name)}" ${C.traits.includes(name)?'checked':''}> ${escape(name)} (${value>0?'+':''}${value})</label>`).join('')}</div></fieldset>
+ ${sourceRecord?`<p class="muted"><strong>Statut tarif OdB :</strong> ${escape(refStatus)}. Une comparaison ne valide pas le calcul.</p>`:''}
  <div class="it-calc-result"><div><small>Prix calculé</small><strong>${fmt(result.total)}</strong></div><div><small>Prix OdB (${escape(state.period)})</small><strong>${fmt(refPrice)}</strong></div><div><small>Écart calcul / OdB</small><strong>${refPrice==null?'Non comparable':fmt(result.total-refPrice)}</strong></div></div>
  <details open><summary>Décomposition du calcul (${result.parts.length} lignes)</summary><table class="it-calc-table"><tbody>${result.parts.map(p=>`<tr><td>${escape(p.label)}</td><td>${p.amount>=0?'+':''}${Math.round(p.amount*100)/100}</td></tr>`).join('')}</tbody><tfoot><tr><th>Total arrondi</th><th>${fmt(result.total)}</th></tr></tfoot></table></details>
  ${result.warn.length?`<div class="it-calc-warnings"><strong>Vérifications nécessaires</strong><ul>${result.warn.map(x=>`<li>${escape(x)}</li>`).join('')}</ul></div>`:''}
@@ -115,8 +118,8 @@ render=function(){originalRender();if(view==='workshop'){const main=document.que
 const saveCustom=()=>{
  const r=compute();if(r.warn.length&&!confirm('Des points nécessitent une vérification. Enregistrer tout de même une copie personnelle non officielle ?'))return;
  const orig=C.sourceId?item(C.sourceId):null;
- const kind=orig?.kind||({armor:'armor',gun:'gun',air:'air',transport:'transport',inf:'support',cav:'support',support:'support',fort:'fort'}[C.kind]);
- const x={...(orig||{}),id:'custom-'+id(),name:C.name.trim()||'Nouvelle unité',nation:C.nation,kind,type:orig?.type||C.kind,rarity:orig?.rarity||0,costs:{Early:r.total,Mid:r.total,Late:r.total},custom:true,source:'Calculateur universel — copie personnelle',calculator:{inputs:structuredClone(C),result:r,source:R.source},sourceRow:0};
+ const kind=orig?.kind||({armor:'armor',gun:'gun',air:'air',transport:'transport',inf:'inf',cav:'cav',support:'support',fort:'fort'}[C.kind]);
+ const x={...(orig||{}),id:'custom-'+id(),name:C.name.trim()||'Nouvelle unité',nation:C.nation,kind,type:orig?.type||C.kind,rarity:orig?.rarity||0,costs:{Early:r.total,Mid:r.total,Late:r.total},priceStatus:'simulation_personnelle_non_officielle',custom:true,source:'Calculateur universel — copie personnelle',calculator:{inputs:structuredClone(C),result:r,source:R.source},sourceRow:0};
  state.custom.push(x);alert('Copie personnelle créée. Coût enregistré fixe : '+fmt(r.total)+' (ne remplace aucun tarif officiel).');render();
 };
 document.addEventListener('change',e=>{
@@ -139,6 +142,6 @@ document.addEventListener('click',e=>{
  else if(action==='save')saveCustom();
  else if(action==='export'){const r=compute();download('Iron_Tide_simulation_budget.json',JSON.stringify({source:R.source,inputs:C,result:r},null,2),'application/json')}
 },true);
-window.IronTideUniversalCalculator={calculate:inputs=>{const prev=C;C={...initial(),...inputs};const r=compute();C=prev;return r},reference:R};
+window.IronTideUniversalCalculator={calculate:inputs=>{const prev=C;try{C={...initial(),...inputs};return compute()}finally{C=prev}},reference:R, auditCatalogue:()=>DB.map(x=>({id:x.id,nom:x.name,nation:x.nation,statut:x.priceStatus||'non_documenté',Early:x.costs?.Early??null,Mid:x.costs?.Mid??null,Late:x.costs?.Late??null}))};
 render();
 })();
