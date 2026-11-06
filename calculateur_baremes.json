@@ -1,0 +1,394 @@
+{
+  "source": "Iron_Tide BUDGET DETAILLE(4).xlsx",
+  "inf": {
+    "Servants / équipe légère": 0,
+    "Milice": 5,
+    "Réserve": 10,
+    "Ligne": 15,
+    "Lourde": 25,
+    "Assaut": 25,
+    "PM / automatiques": 20,
+    "Commissaire politique": 10,
+    "Commandement": 10
+  },
+  "cav": {
+    "Servants / équipe légère": 5,
+    "Milice": 10,
+    "Réserve": 15,
+    "Ligne": 20,
+    "Lourde": 30,
+    "Assaut": 30,
+    "PM / automatiques": 25,
+    "Comissaire Politique": 15,
+    "Commandement": 15
+  },
+  "infTraits": {
+    "Reco": 10,
+    "Indépendantes": 10,
+    "Tirailleurs": 5,
+    "Chasseurs de char": 10,
+    "Troupe de montagne": 10,
+    "Commando": 20,
+    "Troupe Coloniale": 5,
+    "Résistant/partisan": 5,
+    "Grenade Antichar": 5,
+    "Grenade Antichar à fusil": 5,
+    "Mine Magnétique": 10,
+    "Charge explosive": 10,
+    "Grenade": 5,
+    "Grenade à fusil": 5,
+    "Grenade fumigène": 5,
+    "Marqueur fumigène": 5,
+    "Cordes/échelles": 5,
+    "Canot": 5,
+    "Armure": 5,
+    "Panzerfaust": 10,
+    "Goliath (Allemagne)": 25,
+    "Borgward IV": 40
+  },
+  "cavTraits": {
+    "Reco": 10,
+    "Indépendantes": 10,
+    "Tirailleurs": 5,
+    "Chasseurs de char": 10,
+    "Troupe de montagne": 10,
+    "Commando": 20,
+    "Troupe Coloniale": 5,
+    "Résistant/partisan": 5,
+    "Grenade Antichar": 5,
+    "Grenade Antichar à fusil": 5,
+    "Mine Magnétique": 10,
+    "Charge explosive": 10,
+    "Grenade": 5,
+    "Grenade à fusil": 5,
+    "Grenade fumigène": 5,
+    "Marqueur fumigène": 5,
+    "Cordes/échelles": 5,
+    "Canot": 5,
+    "Armure": 5,
+    "Panzerfaust": 10
+  },
+  "support": {
+    "MMG": 15,
+    "HMG": 25,
+    "Fusil antichar": 10,
+    "Fusil ATR lourd": 15,
+    "Lance-flammes": 25,
+    "Mortier léger": 20,
+    "Mortier moyen": 35,
+    "Observateur supplémentaire": 15,
+    "Sniper": 25,
+    "Grippée": -7,
+    "Viseur IR": 5
+  },
+  "vehicleTraits": {
+    "Amphibie": 5,
+    "Rustique": 5,
+    "Impétueux": -10,
+    "Embusqueur": 5,
+    "Reconnaissance": 10,
+    "Télémètre": 10,
+    "Stabilisateur": 10,
+    "Optiques médiocres": -10,
+    "Tourelle étroite": -10,
+    "Tourelle lente": -10,
+    "Casemate ouverte": -10,
+    "Schürzen": 5,
+    "Radio": 0,
+    "Sans radio": -5,
+    "Tir rapide": 10,
+    "Lance-fumigène": 5,
+    "Lance Grenade": 5,
+    "Optique IR": 10,
+    "/ MG coaxiale": 5,
+    "/ MG caisse": 5,
+    "/ MG antiaérienne": 5,
+    "/ MG Tourelle": 5,
+    "/ HMG coaxiale": 7,
+    "/ HMG caisse": 7,
+    "/ HMG antiéaérienne": 7,
+    "/ HMG Tourelle": 7,
+    "Plateforme Tir": 7,
+    "Plateforme radio": 7,
+    "Plateforme réparation": 12,
+    "Équipement génie": 0,
+    "Lames Rhino": 5,
+    "Lame bulldozer": 10,
+    "Roll Miner": 15,
+    "Masses Crab": 15,
+    "Chenilles adaptées": 5,
+    "Chenille ou Roue": 5,
+    "Arme jumelée (+1)": 5,
+    "Arme jumelée (+2)": 10,
+    "Anti-infanterie(+1)": 10,
+    "Anti-infanterie(+2)": 15,
+    "Conduite double": 7
+  },
+  "gunTraits": {
+    "Rustique": 5,
+    "Embusqueur": 10,
+    "Télémètre": 10,
+    "Optiques médiocres": -10,
+    "Casemate ouverte": 0,
+    "Tir rapide": 10,
+    "Optique IR": 10,
+    "Roue": 0,
+    "Hippomobile": -5,
+    "Transportable": 5,
+    "Chenille": 10,
+    "Chenille adaptée": 15,
+    "Bouclier": 15,
+    "Pîvot 360°": 15,
+    "Stock de Munition": 20,
+    "Arme jumelée": 5,
+    "Anti-infanterie(+1)": 10,
+    "Anti-infanterie(+2)": 15
+  },
+  "artillery": {
+    "Tir indirect supplémentaire": 10,
+    "Couvert Dégradé (1)": 5,
+    "Observateur intégré": 0,
+    "Mortier léger démontable": 5,
+    "Mortier lourd (supplément)": 10,
+    "OBS": 0,
+    "Munitions limitées / 3 unités d'artillerie": -15,
+    "Plein de munitions / 3 unités d'artillerie": 15,
+    "/ OBS supplémentaire": 10
+  },
+  "aviation": {
+    "D6": 3,
+    "D8": 5,
+    "D10": 8,
+    "/ munitions supplémentaire": 7,
+    "0": 0,
+    "1": 5,
+    "2": 10,
+    "3": 10,
+    "4": 15,
+    "5": 15,
+    "6": 20,
+    "7": 25,
+    "Vulnérable": -5,
+    "Full MMG": -5,
+    "Résistant": 10,
+    "Duelliste": 5,
+    "Reconnaissance aérienne": 20,
+    "Combat nuit": 5,
+    "Jet": 10,
+    "Base avions": 10
+  },
+  "armor": {
+    "9": {
+      "front": 0,
+      "side": -2,
+      "frontBonus": 0,
+      "sideBonus": 0
+    },
+    "10": {
+      "front": 5,
+      "side": 3,
+      "frontBonus": 0,
+      "sideBonus": 0
+    },
+    "11": {
+      "front": 7,
+      "side": 5,
+      "frontBonus": 0,
+      "sideBonus": 0
+    },
+    "12": {
+      "front": 10,
+      "side": 8,
+      "frontBonus": 0,
+      "sideBonus": 0
+    },
+    "13": {
+      "front": 12,
+      "side": 10,
+      "frontBonus": 0,
+      "sideBonus": 5
+    },
+    "14": {
+      "front": 15,
+      "side": 13,
+      "frontBonus": 0,
+      "sideBonus": 5
+    },
+    "15": {
+      "front": 17,
+      "side": 15,
+      "frontBonus": 0,
+      "sideBonus": 5
+    },
+    "16": {
+      "front": 25,
+      "side": 23,
+      "frontBonus": 5,
+      "sideBonus": 5
+    },
+    "17": {
+      "front": 40,
+      "side": 38,
+      "frontBonus": 5,
+      "sideBonus": 5
+    },
+    "18": {
+      "front": 50,
+      "side": 48,
+      "frontBonus": 5,
+      "sideBonus": 5
+    },
+    "19": {
+      "front": 55,
+      "side": 53,
+      "frontBonus": 5,
+      "sideBonus": 5
+    },
+    "20": {
+      "front": 60,
+      "side": 58,
+      "frontBonus": 5,
+      "sideBonus": 5
+    }
+  },
+  "ac": {
+    "0": 0,
+    "1": 5,
+    "2": 10,
+    "3": 10,
+    "4": 15,
+    "5": 15,
+    "6": 20,
+    "7": 25,
+    "8": 30,
+    "9": 40,
+    "10": 45,
+    "11": 50,
+    "12": 60
+  },
+  "firecracker": {
+    "Aucun": 0,
+    "6+": -5,
+    "5+": -10,
+    "4+": -15,
+    "3+": -20
+  },
+  "transport": {
+    "1": 0,
+    "2": 5,
+    "3": 10,
+    "4": 15,
+    "5": 20,
+    "6": 25,
+    "7": 30,
+    "8": 35,
+    "9": 40,
+    "10": 45,
+    "11": 50,
+    "12": 55
+  },
+  "vehicle": {
+    "Véhicule non blindé": -7,
+    "Véhicule blindé": 0,
+    "Très petit": 7,
+    "Petit": 5,
+    "Normal": 0,
+    "Grand": -5,
+    "Très Grand": -7,
+    "Mastodonte": -15,
+    "Hippomobile": -5,
+    "Roue": 0,
+    "Semi-chenillé": 5,
+    "Chenillé": 10,
+    "Léger": 0,
+    "Moyen": 2,
+    "Lourd": 5,
+    "très lent": -10,
+    "lent": -5,
+    "Rapide": 5,
+    "Très rapide": 10,
+    "Char léger": 0.8,
+    "Char moyen": 1,
+    "Chasseur de char": 1,
+    "Canon automoteur": 1,
+    "Char Lourd": 1.15,
+    "Canon porté": 0.75,
+    "MG": 0,
+    "Canon": 15,
+    "Obusier/Roquette/Mortier": 10,
+    "Lance flamme": 30
+  },
+  "munitions": {
+    "APHE": {
+      "constant": 0,
+      "optional": 5
+    },
+    "HEAT": {
+      "constant": 0,
+      "optional": 5
+    },
+    "APCR": {
+      "constant": 0,
+      "optional": 5
+    },
+    "APDS": {
+      "constant": 0,
+      "optional": 10
+    },
+    "APCBC": {
+      "constant": 0,
+      "optional": 0
+    },
+    "APCNR": {
+      "constant": 0,
+      "optional": 0
+    },
+    "WP": {
+      "constant": 0,
+      "optional": 5
+    },
+    "Roquettes Tulip": {
+      "constant": 0,
+      "optional": 10
+    },
+    "Munitions supplémentaires limitées": {
+      "constant": 0,
+      "optional": 5
+    }
+  },
+  "experience": {
+    "Novice": [
+      -10,
+      -15,
+      -20
+    ],
+    "Vétéran": [
+      0,
+      0,
+      0
+    ],
+    "Élite": [
+      10,
+      15,
+      20
+    ],
+    "As": [
+      15,
+      20,
+      30
+    ]
+  },
+  "morale": {
+    "Hésitant": -5,
+    "Vaillant": 0,
+    "Tenace": 5,
+    "Oscillant": -7,
+    "Fanatique": 7
+  },
+  "period": {
+    "Introduction": 1.2,
+    "Effective": 1,
+    "Effective +1": 0.8,
+    "Obsolète": 0.6
+  }
+}

@@ -1,0 +1,494 @@
+﻿nation,nom,type,budget_base,early,mid,late,statut,source
+Allemagne,Panzer I Ausf. A,armor,29.4,30.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 2}"
+Allemagne,Panzer I Ausf. B,armor,29.4,30.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 3}"
+Allemagne,Panzer I Ausf. F **,armor,63.2,,76.0,51.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 4}"
+Allemagne,Panzer II Ausf. A/B/C,armor,62.56,63.0,51.0,38.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 5}"
+Allemagne,Panzer II Ausf. F,armor,68.32,82.0,55.0,41.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 6}"
+Allemagne,Panzer II Ausf. J **,armor,110.12,,133.0,89.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 7}"
+Allemagne,Panzer III Ausf. E/F,armor,62.0,62.0,50.0,38.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 8}"
+Allemagne,Panzer III Ausf. G/H,armor,65.56,79.0,53.0,40.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 9}"
+Allemagne,Panzer III Ausf. J,armor,86.25,104.0,69.0,52.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 10}"
+Allemagne,Panzer III Ausf. L,armor,91.25,,110.0,73.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 11}"
+Allemagne,Panzer III Ausf. M,armor,96.25,,116.0,77.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 12}"
+Allemagne,Panzer III Ausf. N,armor,89.25,,108.0,72.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 13}"
+Allemagne,Panzer IV Ausf. A,armor,69.2,70.0,56.0,42.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 14}"
+Allemagne,Panzer IV Ausf. B/C,armor,73.5,74.0,59.0,45.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 15}"
+Allemagne,Panzer IV Ausf. D/E,armor,79.95,96.0,64.0,48.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 16}"
+Allemagne,Panzer IV Ausf. F1,armor,84.25,102.0,68.0,51.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 17}"
+Allemagne,Panzer IV Ausf. F2,armor,104.25,,126.0,84.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 18}"
+Allemagne,Panzer IV Ausf. G/H,armor,115.7,,139.0,116.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 19}"
+Allemagne,Panzer IV Ausf. J,armor,95.7,,,96.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 20}"
+Allemagne,Panther Ausf. D,armor,175.15,,211.0,141.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 21}"
+Allemagne,Panther Ausf. A,armor,155.15,,187.0,125.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 22}"
+Allemagne,Panther Ausf. G,armor,184.45,,,222.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 23}"
+Allemagne,Tiger I Ausf. E,armor,198.03,,238.0,159.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 24}"
+Allemagne,Tiger II tourelle Porsche *,armor,243.45,,,293.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 25}"
+Allemagne,Tiger II tourelle Henschel,armor,218.73,,,263.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 26}"
+Allemagne,Grille Ausf. H,armor,70.7,,85.0,57.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 27}"
+Allemagne,Grille Ausf. K,armor,60.7,,73.0,49.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 28}"
+Allemagne,Brummbär,armor,140.2,,169.0,113.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 29}"
+Allemagne,Wespe frühe,armor,59.7,,72.0,48.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 30}"
+Allemagne,Wespe späte,armor,49.7,,,60.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 31}"
+Allemagne,Hummel frühe,armor,60.7,,73.0,49.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 32}"
+Allemagne,Hummel späte,armor,50.7,,,61.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 33}"
+Allemagne,Brummbär späte,armor,135.2,,,163.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 34}"
+Allemagne,Sturmtiger **,armor,205.7,,,247.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 35}"
+Allemagne,Grille 17/21 ***,armor,63.2,,,76.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 36}"
+Allemagne,StuG III Ausf. A/B,armor,73.5,89.0,59.0,45.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 37}"
+Allemagne,StuG III Ausf. E,armor,79.95,96.0,64.0,48.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 38}"
+Allemagne,StuG III Ausf. F/F8,armor,109.25,,132.0,88.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 39}"
+Allemagne,StuG III Ausf. G,armor,120.7,,145.0,97.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 40}"
+Allemagne,StuG IV,armor,120.7,,145.0,97.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 41}"
+Allemagne,Jagdpanzer IV L/48,armor,142.9,,,172.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 42}"
+Allemagne,Panzer IV/70 (V),armor,157.9,,,190.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 43}"
+Allemagne,Panzer IV/70 (A),armor,135.7,,,163.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 44}"
+Allemagne,Hetzer (Jagdpanzer 38(t)),armor,131.45,,,158.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 45}"
+Allemagne,Marder I,armor,72.7,,88.0,59.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 46}"
+Allemagne,Marder II Sd.Kfz. 132,armor,67.7,,82.0,55.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 47}"
+Allemagne,Marder II Sd.Kfz. 131,armor,67.7,,82.0,55.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 48}"
+Allemagne,Marder III Sd.Kfz. 139,armor,67.7,,82.0,55.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 49}"
+Allemagne,Marder III Ausf. H,armor,67.7,,82.0,55.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 50}"
+Allemagne,Marder III Ausf. M,armor,67.7,,82.0,55.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 51}"
+Allemagne,Hetzer Flamm(Jagdpanzer 38(t)) **,armor,126.7,,,153.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 52}"
+Allemagne,Nashorn,armor,74.7,,90.0,60.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 53}"
+Allemagne,Hornisse (première série),armor,44.7,,54.0,36.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 54}"
+Allemagne,Ferdinand **,armor,182.2,,219.0,146.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 55}"
+Allemagne,Elefant **,armor,219.45,,,264.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 56}"
+Allemagne,Jagdpanther,armor,212.95,,,256.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 57}"
+Allemagne,Jagdtiger *,armor,252.65,,,304.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 58}"
+Allemagne,Sd.Kfz. 250 (famille),armor,15.4,19.0,13.0,10.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 59}"
+Allemagne,Sd.Kfz. 250 HQ,armor,37.4,45.0,30.0,23.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 60}"
+Allemagne,Sd.Kfz. 250 HQ,armor,42.4,51.0,34.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 61}"
+Allemagne,Sd.Kfz. 250 OP,armor,13.4,,17.0,11.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 62}"
+Allemagne,Sd.Kfz. 250/9,armor,38.4,,47.0,31.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 63}"
+Allemagne,Sd.Kfz. 250/génie,armor,7.4,9.0,6.0,5.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 64}"
+Allemagne,Sd.Kfz. 251 (famille),armor,6.4,8.0,6.0,4.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 65}"
+Allemagne,Sd.Kfz. 251 HQ,armor,41.7,51.0,34.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 66}"
+Allemagne,Sd.Kfz. 251 HQ,armor,46.7,57.0,38.0,29.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 67}"
+Allemagne,Sd.Kfz. 251 OP,armor,17.7,,22.0,15.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 68}"
+Allemagne,Sd.Kfz. 251/9,armor,42.7,,52.0,35.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 69}"
+Allemagne,Sd.Kfz. 251 Génie,armor,11.7,,15.0,10.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 70}"
+Allemagne,Sd.Kfz. 251/16,armor,-8.3,,,,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 71}"
+Allemagne,Sd.Kfz. 251 Wurfrahmen 40,armor,29.7,,,36.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 72}"
+Allemagne,Sd.Kfz. 251/22,armor,54.7,66.0,44.0,33.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 73}"
+Allemagne,Dicker Max **,armor,111.2,,134.0,89.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 74}"
+Allemagne,Sturer Emil **,armor,119.2,,,144.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 75}"
+Allemagne,Waffenträger Pak 43 ***,armor,84.7,,,102.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 76}"
+Allemagne,Waffenträger 12.8cm ***,armor,97.7,,,118.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 77}"
+Allemagne,Waffenträger Ardelt ***,armor,84.7,102.0,68.0,51.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 78}"
+Allemagne,Sd.Kfz. 6/3 Diana **,armor,55.0,,,66.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 79}"
+Allemagne,Flakpanzer IV Möbelwagen,armor,83.95,,,101.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 80}"
+Allemagne,Flakpanzer IV Wirbelwind,armor,73.95,,,89.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 81}"
+Allemagne,Flakpanzer IV Ostwind *,armor,78.95,,,95.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 82}"
+Allemagne,Flakpanzer IV Kugelblitz ***,armor,89.7,108.0,72.0,54.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 83}"
+Allemagne,Sd.Kfz. 10/4,armor,49.0,,59.0,40.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 84}"
+Allemagne,Sd.Kfz. 10/5,armor,49.0,,59.0,40.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 85}"
+Allemagne,Sd.Kfz. 7/1,armor,39.0,,47.0,32.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 86}"
+Allemagne,Sd.Kfz. 7/2,armor,39.0,,47.0,32.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 87}"
+Allemagne,Flakpanzer 38(t),armor,62.45,,,75.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 88}"
+Allemagne,Panzer IV mit Flak 88 ***,armor,47.0,,57.0,38.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 89}"
+Allemagne,Panzer II Ausf. L Luchs *,armor,58.56,,59.0,47.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 90}"
+Allemagne,Sd.Kfz. 221,armor,16.7,17.0,14.0,11.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 91}"
+Allemagne,Sd.Kfz. 222,armor,56.7,69.0,46.0,35.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 92}"
+Allemagne,Sd.Kfz. 231/232,armor,55.7,,67.0,45.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 93}"
+Allemagne,Sd.Kfz. 233,armor,64.75,,,78.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 94}"
+Allemagne,Sd.Kfz. 234/1,armor,58.7,,,71.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 95}"
+Allemagne,Sd.Kfz. 234/2 Puma,armor,81.75,,,99.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 96}"
+Allemagne,Sd.Kfz. 234/3,armor,84.75,,,102.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 97}"
+Allemagne,Sd.Kfz. 234/4,armor,69.7,,,84.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 98}"
+Allemagne,Panther Ausf. F (projet) ***,armor,195.95,,,236.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 99}"
+Allemagne,Maus (prototype) ***,armor,391.75,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 100}"
+Allemagne,Panther II (Prototype) ***,armor,197.95,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 101}"
+Allemagne,E-50 (Prototype) ***,armor,208.7,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 102}"
+Allemagne,E-75 (Prototype) ***,armor,273.3,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 103}"
+Allemagne,E-100 (prototype inachevé) ***,armor,314.41,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 104}"
+Allemagne,Coelian (prototype) ***,armor,138.45,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 105}"
+Allemagne,E-50 Flak (proto) ***,armor,180.7,,,217.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 106}"
+Allemagne,E-10 mit 7.5 cm PaK 39 L/48 (Prototype) ***,armor,59.7,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 107}"
+Allemagne,E-10 mit 7.5 cm PaK 42 L/70 (Prototype) ***,armor,74.7,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 108}"
+Allemagne,E-25 mit 7.5 cm PaK 39 L/48 (Prototype) ***,armor,83.5,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 109}"
+Allemagne,E-50 mit 10.5 cm KwK L/52 (Prototype) ***,armor,203.7,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 110}"
+Allemagne,E-75 mit 8.8 cm KwK 43 L/71 (Prototype) ***,armor,275.6,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 111}"
+Allemagne,E-75 mit 10.5 cm KwK L/68 (Prototype) ***,armor,269.85,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 112}"
+Allemagne,E-100 mit 15 cm KwK 44 L/38 (Prototype) ***,armor,291.41,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 113}"
+Allemagne,"Panzerkampfwagen 35(t) (LT vz.35, Tchécoslovaquie)",armor,61.75,75.0,62.0,50.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 114}"
+Allemagne,"Panzerkampfwagen 38(t) (LT vz.38, Tchécoslovaquie)",armor,72.5,87.0,73.0,58.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 115}"
+Allemagne,"Panzerkampfwagen B2 740(f) (Char B1 bis, France)",armor,101.15,122.0,81.0,61.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 116}"
+Allemagne,Flammwagen auf Pz.Kpfw. B2 (f) (B2 lance-flammes),armor,76.15,92.0,61.0,46.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 117}"
+Allemagne,"Panzerkampfwagen 35S 739(f) (Somua S35, France)",armor,66.95,81.0,54.0,41.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 118}"
+Allemagne,"Panzerkampfwagen 38H 735(f) (Hotchkiss H35/H39, France)",armor,54.65,66.0,44.0,33.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 119}"
+Allemagne,7.5 cm PaK 40 (Sf) auf GW 39H(f) (Hotchkiss converti),armor,77.75,,,94.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 120}"
+Allemagne,10.5 cm leFH 18(Sf) auf GW 39H(f) (Hotchkiss converti),armor,64.75,,,78.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 121}"
+Allemagne,"Panzerkampfwagen 35R 731(f) (Renault R35, France)",armor,54.65,,,66.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 122}"
+Allemagne,"Panzerkampfwagen 731(f) (Renault FT, France)",armor,11.65,,,14.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 123}"
+Allemagne,Panzerkampfwagen FCM 36 739(f) (France),armor,48.2,,,58.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 124}"
+Allemagne,7.5 cm PaK 40 (Sf) auf FCM 36 (f),armor,82.75,,,100.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 125}"
+Allemagne,10.5 cm leFH 18 (Sf) auf FCM 36 (f),armor,64.75,,,78.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 126}"
+Allemagne,"Panzerspähwagen P 204(f) (Panhard 178, France)",armor,77.75,,,94.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 127}"
+Allemagne,15 cm sFH 13/1 (Sf) auf Lorraine Schlepper (f),armor,55.7,,,67.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 128}"
+Allemagne,10.5 cm leFH 18(Sf) auf Lorraine Schlepper (f),armor,49.7,,,60.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 129}"
+Allemagne,Panzerkampfwagen T-34  (URSS),armor,126.9,153.0,102.0,77.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 130}"
+Allemagne,Panzerkampfwagen T-34 747(r) (URSS),armor,117.9,142.0,95.0,71.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 131}"
+Allemagne,SturmPzKpfw KV-1 (URSS),armor,132.95,160.0,107.0,80.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 132}"
+Allemagne,SturmPzKpfw KV-1 756(r) (URSS),armor,137.95,166.0,111.0,83.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 133}"
+Allemagne,SturmPzKpfw KV-2 754(r) (URSS),armor,120.95,146.0,97.0,73.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 134}"
+Allemagne,"PzKpfw Mk II 748(e) (Matilda II, Royaume-Uni)",armor,89.75,108.0,72.0,54.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 135}"
+Allemagne,SturmPzKpfw KV-2 754(r) (URSS),armor,134.95,162.0,108.0,81.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 136}"
+Allemagne,"PzKpfw Mk III 749(e) (Valentine, Royaume-Uni)",armor,44.0,53.0,36.0,27.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 137}"
+Allemagne,"PzKpfw Mk IV 750(e) (Churchill, Royaume-Uni) **",armor,137.95,166.0,111.0,83.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 138}"
+Allemagne,"PzKpfw M4 748(a) 75 (M4 Sherman, USA) *",armor,85.0,,102.0,68.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 139}"
+Allemagne,"PzKpfw M4 748(a) 75 (M4 Sherman, USA) *",armor,105.0,,126.0,84.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 140}"
+Allemagne,Beute M3 Half-track (USA),armor,11.7,,15.0,10.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 141}"
+Allemagne,PzKpfw M13/40 (i) (Italie),armor,71.2,86.0,57.0,43.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 142}"
+Allemagne,Semovente 75/18 (i) (Italie),armor,69.2,84.0,56.0,42.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 143}"
+Allemagne,Beute M3 Half-track (USA),armor,36.7,,45.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 144}"
+Allemagne,7.5 cm PaK 40 (Sf) auf GW 39H(f) – Hotchkiss H39,armor,67.75,,,82.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 145}"
+Allemagne,10.5 cm leFH 18(Sf) auf GW 39H(f) – Hotchkiss,armor,54.75,,,66.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 146}"
+Allemagne,Reihenwerfer auf Somua MCG (f),armor,37.7,,,46.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 147}"
+Allemagne,8 cm Granatwerfer auf S307(f),armor,19.65,,,24.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 148}"
+Allemagne,7.5 cm FK auf Renault UE (f),armor,13.65,,,17.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 149}"
+Allemagne,8 cm GrW auf Renault UE (f),armor,22.65,,,28.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 150}"
+Allemagne,Panzerkampfwagen B2 740(f) – Char B1 bis,armor,101.15,,,122.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 151}"
+Allemagne,Flammwagen B2 (f),armor,79.15,,,95.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Blindés', 'row': 152}"
+Allemagne,Sd.Kfz. 7 (8t),transport,-2.0,,,,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 2}"
+Allemagne,Sd.Kfz. 10 (1t),transport,-2.0,,,,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 3}"
+Allemagne,Sd.Kfz. 9 (Famo),transport,0.0,0.0,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 4}"
+Allemagne,Raupenschlepper Ost (RSO),transport,0.0,,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 5}"
+Allemagne,Maultier (Sd.Kfz. 3),transport,-5.0,,,,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 6}"
+Allemagne,Opel Blitz,transport,0.0,0.0,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 7}"
+Allemagne,Sd.Kfz. 11 (3t),transport,0.0,0.0,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 8}"
+Allemagne,Sd.Kfz. 6 (5t),transport,0.0,0.0,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 9}"
+Allemagne,Sd.Kfz. 2 Kettenkrad,transport,5.0,6.0,4.0,3.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 10}"
+Allemagne,Krupp Protze (Kfz.69/70),transport,3.0,3.0,3.0,2.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 11}"
+Allemagne,Mercedes-Benz L 3000,transport,3.0,4.0,3.0,2.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 12}"
+Allemagne,Volkswagen Kübelwagen,transport,5.0,6.0,4.0,3.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 13}"
+Allemagne,Volkswagen Schwimmwagen,transport,0.0,,0.0,0.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 14}"
+Allemagne,Horch 901/108 (famille tout-terrain),transport,3.0,3.0,3.0,2.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 15}"
+Allemagne,Steyr 1500A,transport,3.0,4.0,3.0,2.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 16}"
+Allemagne,Radschlepper Ost (Škoda RSO / Porsche 175),transport,-5.0,,,,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Véhicules', 'row': 17}"
+Allemagne,10.5 cm leFH 18,gun,34.0,34.0,28.0,21.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 2}"
+Allemagne,10.5 cm leFH 18M,gun,34.0,41.0,28.0,21.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 3}"
+Allemagne,15 cm sFH 18,gun,46.0,46.0,37.0,28.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 4}"
+Allemagne,10 cm sK 18,gun,67.85,68.0,55.0,41.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 5}"
+Allemagne,15 cm K 18,gun,80.5,81.0,65.0,49.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 6}"
+Allemagne,17 cm K 18 in MrsLaf,gun,89.7,108.0,72.0,54.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 7}"
+Allemagne,21 cm Mörser 18,gun,75.9,92.0,61.0,46.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 8}"
+Allemagne,7.5 cm leIG 18,gun,29.0,29.0,24.0,18.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 9}"
+Allemagne,15 cm sIG 33,gun,54.05,55.0,44.0,33.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 10}"
+Allemagne,3.7 cm Pak 36,gun,30.6,31.0,25.0,19.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 11}"
+Allemagne,5 cm Pak 38,gun,33.15,40.0,27.0,20.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 12}"
+Allemagne,7.5 cm Pak 40,gun,52.0,,63.0,42.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 13}"
+Allemagne,7.5 cm Pak 97/38,gun,39.0,,47.0,32.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 14}"
+Allemagne,7.62 cm Pak 36(r),gun,52.0,63.0,42.0,32.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 15}"
+Allemagne,4.2 cm Pak 41,gun,26.35,32.0,22.0,16.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 16}"
+Allemagne,7.5 cm Pak 41,gun,52.0,,63.0,42.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 17}"
+Allemagne,8.8 cm Pak 43,gun,74.0,,89.0,60.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 18}"
+Allemagne,12.8 cm Pak 44 **,gun,88.55,,,107.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 19}"
+Allemagne,2.8 cm sPzB 41,gun,39.1,47.0,32.0,24.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 20}"
+Allemagne,2 cm Flak 30/38,gun,30.6,31.0,25.0,19.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 21}"
+Allemagne,4x 2 cm Flak 30/38,gun,30.6,37.0,25.0,19.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 22}"
+Allemagne,3.7 cm Flak 18/36/37,gun,30.6,31.0,25.0,19.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 23}"
+Allemagne,2x3.7 cm Flak 18/36/37,gun,34.85,42.0,28.0,21.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 24}"
+Allemagne,5 cm Flak 41,gun,37.4,45.0,30.0,23.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 25}"
+Allemagne,8.8 cm Flak 18/36/37,gun,56.35,57.0,46.0,34.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 26}"
+Allemagne,10.5 cm Flak 38/39,gun,67.85,68.0,55.0,41.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 27}"
+Allemagne,12.8 cm Flak 40,gun,77.05,,93.0,62.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 28}"
+Allemagne,"15 cm Flak (navy-manned, static) **",gun,86.25,,104.0,69.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 29}"
+Allemagne,5 cm leGrW 36,gun,11.9,12.0,10.0,8.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 30}"
+Allemagne,8 cm GrW 34,gun,17.0,17.0,14.0,11.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 31}"
+Allemagne,12 cm GrW 42,gun,22.0,,27.0,18.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 32}"
+Allemagne,10 cm Nebelwerfer 35,gun,19.0,23.0,16.0,12.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 33}"
+Allemagne,15 cm Nebelwerfer 41,gun,28.75,35.0,23.0,18.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 34}"
+Allemagne,21 cm Nebelwerfer 42,gun,52.9,,64.0,43.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 35}"
+Allemagne,30 cm Nebelwerfer 42,gun,52.9,,64.0,43.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 36}"
+Allemagne,28/32 cm Nebelwerfer 41,gun,52.9,64.0,43.0,32.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 37}"
+Allemagne,Panzerwerfer 42 (Sd.Kfz. 4/1),gun,28.75,,35.0,23.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 38}"
+Allemagne,Karl-Gerät (60 cm Gerät 040 / 54 cm 041) **,gun,41.0,50.0,33.0,25.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 39}"
+Allemagne,Schwerer Gustav (80 cm) **,gun,61.0,,74.0,49.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 40}"
+Allemagne,Krupp K5 (28 cm),gun,91.0,110.0,73.0,55.0,provisoire_a_recalculer,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Canons tractés', 'row': 41}"
+Allemagne,BV 141 A/B ***,air,39.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 2}"
+Allemagne,BV 141 A/B ***,air,42.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 3}"
+Allemagne,Bf 109 A/B/C,air,19.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 4}"
+Allemagne,Bf 109 A/B/C,air,27.0,27.0,22.0,17.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 5}"
+Allemagne,Bf 109 E-1,air,43.0,52.0,35.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 6}"
+Allemagne,Bf 109 E-3/E-4/E-7,air,35.0,42.0,28.0,21.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 7}"
+Allemagne,Bf 110 C-1/C-2,air,41.0,50.0,33.0,25.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 8}"
+Allemagne,Bf 110 C-4,air,41.0,50.0,33.0,25.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 9}"
+Allemagne,Do 17 E/F/Z,air,49.0,59.0,40.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 10}"
+Allemagne,Do 17 P(1 et 2),air,49.0,49.0,40.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 11}"
+Allemagne,Do 17 Z-3,air,52.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 12}"
+Allemagne,Do 215 B-4,air,42.0,51.0,34.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 13}"
+Allemagne,Fi 156 C,air,35.0,42.0,28.0,21.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 14}"
+Allemagne,He 111 H/P,air,29.0,35.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 15}"
+Allemagne,He 111 H/P,air,29.0,35.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 16}"
+Allemagne,He 111 H/P,air,49.0,59.0,40.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 17}"
+Allemagne,He 111 H/P,air,19.0,23.0,16.0,12.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 18}"
+Allemagne,He 111 H/P,air,34.0,41.0,28.0,21.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 19}"
+Allemagne,Hs 126 A/B,air,29.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 20}"
+Allemagne,Hs 129 A-0/A-1 ***,air,45.0,45.0,36.0,27.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 21}"
+Allemagne,Ju 87 A-1,air,29.0,35.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 22}"
+Allemagne,Ju 87 B-1,air,29.0,29.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 23}"
+Allemagne,Ju 87 B-2,air,29.0,35.0,24.0,18.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 24}"
+Allemagne,Ju 88 A,air,39.0,47.0,32.0,24.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 25}"
+Allemagne,Bf 109 F-1/F-2,air,34.0,41.0,28.0,21.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 26}"
+Allemagne,Bf 109 F-4,air,37.0,45.0,30.0,23.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 27}"
+Allemagne,Bf 109 G-1,air,24.0,29.0,20.0,15.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 28}"
+Allemagne,Bf 109 G-2,air,40.0,,48.0,32.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 29}"
+Allemagne,Bf 109 G-4,air,35.0,,42.0,28.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 30}"
+Allemagne,Bf 109 G-6,air,35.0,,42.0,28.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 31}"
+Allemagne,Bf 109 G-6 (R I),air,38.0,,46.0,31.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 32}"
+Allemagne,Bf 109 G-6 (R II),air,32.0,,39.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 33}"
+Allemagne,Bf 109 G-6 (R III),air,32.0,,39.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 34}"
+Allemagne,Bf 109 G-6 (R IV),air,35.0,,42.0,28.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 35}"
+Allemagne,Bf 109 G-6 (R VI),air,38.0,,46.0,31.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 36}"
+Allemagne,Bf 109 G-6 (U3),air,52.0,,63.0,42.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 37}"
+Allemagne,Bf 109 G-6 (U4),air,32.0,,39.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 38}"
+Allemagne,Bf 110 C-7,air,41.0,,50.0,33.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 39}"
+Allemagne,Bf 110 D-0/D-1,air,61.0,74.0,49.0,37.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 40}"
+Allemagne,Bf 110 E-2,air,41.0,50.0,33.0,25.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 41}"
+Allemagne,Bf 110 F-2,air,41.0,50.0,33.0,25.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 42}"
+Allemagne,Bf 110 G-2,air,41.0,,50.0,33.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 43}"
+Allemagne,Bf 110 G-4,air,41.0,,50.0,33.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 44}"
+Allemagne,Do 217 E,air,48.0,,58.0,39.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 45}"
+Allemagne,Do 217 J,air,48.0,58.0,39.0,29.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 46}"
+Allemagne,Do 217 M,air,42.0,,51.0,34.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 47}"
+Allemagne,Do 217 N,air,57.0,,69.0,46.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 48}"
+Allemagne,Fw 190 A,air,43.0,,52.0,35.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 49}"
+Allemagne,Fw 190 A-4,air,38.0,46.0,31.0,23.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 50}"
+Allemagne,Fw 190 A-4 (U1),air,37.0,,45.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 51}"
+Allemagne,Fw 190 A-6,air,37.0,,45.0,30.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 52}"
+Allemagne,Fw 190 A-7,air,32.0,,39.0,26.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 53}"
+Allemagne,Fw 190 F-1,air,38.0,,46.0,31.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 54}"
+Allemagne,Fw 190 G-1,air,43.0,,52.0,35.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 55}"
+Allemagne,He 111 H-16,air,20.0,,24.0,16.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 56}"
+Allemagne,He 111 H-16 (U),air,40.0,,48.0,32.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 57}"
+Allemagne,He 111 H-20/H-22,air,10.0,,12.0,8.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 58}"
+Allemagne,Hs 129 B,air,29.0,,35.0,24.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 59}"
+Allemagne,Ju 188 E-1/E-2,air,10.0,,12.0,8.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 60}"
+Allemagne,Ju 188 F-1,air,40.0,,48.0,32.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 61}"
+Allemagne,Ju 87 D-1,air,20.0,,24.0,16.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 62}"
+Allemagne,Ju 87 D-3,air,20.0,,24.0,16.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 63}"
+Allemagne,Ju 87 D-5,air,26.0,,32.0,21.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 64}"
+Allemagne,Ju 87 G-1 *,air,36.0,,44.0,29.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 65}"
+Allemagne,Ju 87 G-2 *,air,10.0,,13,9,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 66}"
+Allemagne,Ju 88 A-14/A-15,air,10.0,,,12.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 67}"
+Allemagne,Ju 88 A-17,air,22.0,,27,18,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 68}"
+Allemagne,Ju 88 C-6,air,40.0,,50,33,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 69}"
+Allemagne,Ju 88 D-4,air,22.0,,,27,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 70}"
+Allemagne,Ju 88 G-1/G-6,air,48.0,,59,40,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 71}"
+Allemagne,Ju 88 P-1 *,air,16.0,,20,13,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 72}"
+Allemagne,Ju 88 S-1,air,40.0,,50,33,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 73}"
+Allemagne,Ju 88 T-1,air,25.0,,30,20,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 74}"
+Allemagne,Me 210 A-1 ***,air,25.0,,,,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 75}"
+Allemagne,Me 410 A-1,air,20.0,24,20,16,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 76}"
+Allemagne,Ar 234 B-1 **,air,20.0,24.0,20.0,16.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 77}"
+Allemagne,Ar 234 B-2,air,32.0,39,32,26,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 78}"
+Allemagne,Bf 109 G/K,air,52.0,64,52,43,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 79}"
+Allemagne,Bf 109 G-8,air,40.0,49,40,33,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 80}"
+Allemagne,Fw 190 D-9,air,45.0,54,45,36,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 81}"
+Allemagne,Fw 190 F-8,air,45.0,54.0,45.0,36.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 82}"
+Allemagne,Fw 190 G-8,air,37.0,45,37,30,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 83}"
+Allemagne,He 162 A-2 *,air,54.0,66,54,44,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 84}"
+Allemagne,Hs 129 B-3 **,air,45.0,55,45,37,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 85}"
+Allemagne,Me 163 B-1 *,air,51.0,62,51,41,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 86}"
+Allemagne,Me 262 A-1a,air,51.0,62.0,51.0,41.0,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 87}"
+Allemagne,Me 262 A-1a/U3 (U3) **,air,42.0,52,42,34,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 88}"
+Allemagne,Me 262 A-2a,air,41.0,50,41,34,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 89}"
+Allemagne,Me 262 (K 50mm) ***,air,43.0,53,43,35,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 90}"
+Allemagne,Me 410 B-2 (U4),air,46.0,56,46,38,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 91}"
+Allemagne,Ta 152 C/H *,air,45.0,55,45,37,base_confirmee_odB_periodes_a_verifier,"{'file': 'OdB_Allemagne_V9(1).xlsx', 'sheet': 'Aviations', 'row': 92}"
+Allemagne,Horten HO 229 ***,air,45.0,54.0,45.0,36.0,provisoire_a_recalculer,
+URSS,T-27 tankette,armor,10.92,11.0,9.0,7.0,provisoire_a_recalculer,
+URSS,T-37A,armor,10.92,11.0,9.0,7.0,provisoire_a_recalculer,
+URSS,T-38,armor,18.92,19.0,16.0,12.0,provisoire_a_recalculer,
+URSS,T-40 *,armor,32.32,39.0,26.0,20.0,provisoire_a_recalculer,
+URSS,T-26 mod. 1931 twin turret,armor,6.52,7.0,6.0,4.0,provisoire_a_recalculer,
+URSS,T-26 mod. 1932 twin turret 37mm,armor,34.52,35.0,28.0,21.0,provisoire_a_recalculer,
+URSS,T-26 mod. 1933,armor,32.36,33.0,26.0,20.0,provisoire_a_recalculer,
+URSS,T-26 mod. 1938/39 conical turret,armor,43.8,44.0,36.0,27.0,provisoire_a_recalculer,
+URSS,T-26E *,armor,52.4,63.0,42.0,32.0,provisoire_a_recalculer,
+URSS,OT-26 / KhT-26 *,armor,17.96,18.0,15.0,11.0,provisoire_a_recalculer,
+URSS,OT-130 / OT-133 *,armor,28.9,29.0,24.0,18.0,provisoire_a_recalculer,
+URSS,BT-2,armor,34.52,35.0,28.0,21.0,provisoire_a_recalculer,
+URSS,BT-5,armor,48.92,49.0,40.0,30.0,provisoire_a_recalculer,
+URSS,BT-5/A *,armor,40.92,41.0,33.0,25.0,provisoire_a_recalculer,
+URSS,BT-7 mod. 1935/37,armor,52.36,53.0,42.0,32.0,provisoire_a_recalculer,
+URSS,BT-7A *,armor,26.76,27.0,22.0,17.0,provisoire_a_recalculer,
+URSS,BT-7M / BT-8 **,armor,57.52,58.0,47.0,35.0,provisoire_a_recalculer,
+URSS,T-28 mod. 1938,armor,44.2,45.0,36.0,27.0,provisoire_a_recalculer,
+URSS,T-28E *,armor,61.4,74.0,50.0,37.0,provisoire_a_recalculer,
+URSS,T-35 **,armor,89.93,90.0,,,provisoire_a_recalculer,
+URSS,T-50 *,armor,82.72,100.0,67.0,50.0,provisoire_a_recalculer,
+URSS,T-60 1940,armor,51.12,62.0,41.0,31.0,provisoire_a_recalculer,
+URSS,T-60 1942,armor,71.16,,86.0,57.0,provisoire_a_recalculer,
+URSS,T-70,armor,72.4,,87.0,58.0,provisoire_a_recalculer,
+URSS,T-80 light tank **,armor,72.4,,87.0,58.0,provisoire_a_recalculer,
+URSS,T-34/76 mod. 1940,armor,75.7,91.0,61.0,46.0,provisoire_a_recalculer,
+URSS,T-34/76 mod. 1941,armor,92.15,111.0,74.0,56.0,provisoire_a_recalculer,
+URSS,T-34/76 mod. 1942,armor,102.15,,123.0,82.0,provisoire_a_recalculer,
+URSS,T-34/76 mod. 1943 hexagonal turret,armor,106.45,,128.0,86.0,provisoire_a_recalculer,
+URSS,T-34/57 **,armor,99.15,119.0,80.0,60.0,provisoire_a_recalculer,
+URSS,OT-34,armor,87.15,,105.0,70.0,provisoire_a_recalculer,
+URSS,T-34/85 mod. 1943 D-5T *,armor,108.45,,,131.0,provisoire_a_recalculer,
+URSS,T-34/85 mod. 1944 ZiS-S-53,armor,130.65,,,157.0,provisoire_a_recalculer,
+URSS,T-34/85 command,armor,108.45,,,131.0,provisoire_a_recalculer,
+URSS,KV-1 mod. 1939 L-11,armor,99.42,120.0,80.0,60.0,provisoire_a_recalculer,
+URSS,KV-1 mod. 1940 F-32,armor,115.86,140.0,93.0,70.0,provisoire_a_recalculer,
+URSS,KV-1 mod. 1942 ZiS-5,armor,146.39,,176.0,118.0,provisoire_a_recalculer,
+URSS,KV-1E appliqué *,armor,198.26,238.0,159.0,119.0,provisoire_a_recalculer,
+URSS,KV-1S,armor,110.92,,134.0,89.0,provisoire_a_recalculer,
+URSS,KV-2,armor,76.76,93.0,62.0,47.0,provisoire_a_recalculer,
+URSS,KV-8,armor,95.16,,115.0,77.0,provisoire_a_recalculer,
+URSS,KV-85,armor,132.19,,159.0,106.0,provisoire_a_recalculer,
+URSS,IS-1 / IS-85,armor,186.53,,224.0,150.0,provisoire_a_recalculer,
+URSS,IS-2 mod. 1943 stepped hull,armor,178.48,,215.0,143.0,provisoire_a_recalculer,
+URSS,IS-2 mod. 1944 sloped front,armor,228.73,,,275.0,provisoire_a_recalculer,
+URSS,IS-3 ***,armor,320.16,,,385.0,provisoire_a_recalculer,
+URSS,SU-76,armor,57.7,,70.0,47.0,provisoire_a_recalculer,
+URSS,SU-76M,armor,62.7,,76.0,51.0,provisoire_a_recalculer,
+URSS,ZiS-30 **,armor,29.65,36.0,24.0,18.0,provisoire_a_recalculer,
+URSS,SU-85,armor,102.0,,123.0,82.0,provisoire_a_recalculer,
+URSS,SU-85M *,armor,124.2,,,150.0,provisoire_a_recalculer,
+URSS,SU-100 *,armor,139.2,,168.0,112.0,provisoire_a_recalculer,
+URSS,SU-122 *,armor,86.45,,104.0,70.0,provisoire_a_recalculer,
+URSS,SU-152,armor,89.45,,108.0,72.0,provisoire_a_recalculer,
+URSS,ISU-152,armor,115.95,,,140.0,provisoire_a_recalculer,
+URSS,ISU-122 *,armor,132.95,,,160.0,provisoire_a_recalculer,
+URSS,ISU-122S **,armor,132.95,,160.0,107.0,provisoire_a_recalculer,
+URSS,StuG III F(capturé) *,armor,105.7,,127.0,85.0,provisoire_a_recalculer,
+URSS,StuG III D/E(capturé) *,armor,90.7,,109.0,73.0,provisoire_a_recalculer,
+URSS,SU-76i (sur StuG III / Pz III capturé) *,armor,105.7,,127.0,85.0,provisoire_a_recalculer,
+URSS,Marder II (capturé) **,armor,58.4,,71.0,47.0,provisoire_a_recalculer,
+URSS,M3 Stuart / M3A1 (Lend-Lease),armor,70.56,,85.0,57.0,provisoire_a_recalculer,
+URSS,M3 Lee (Lend-Lease),armor,78.7,,95.0,63.0,provisoire_a_recalculer,
+URSS,M4A2 Sherman 75mm (Lend-Lease),armor,87.0,,,105.0,provisoire_a_recalculer,
+URSS,M4A2(76)W Sherman (Lend-Lease),armor,105.0,126.0,84.0,63.0,provisoire_a_recalculer,
+URSS,Valentine Mk II/III (Lend-Lease),armor,81.15,,98.0,65.0,provisoire_a_recalculer,
+URSS,Valentine Mk IX/X (Lend-Lease),armor,94.15,113.0,76.0,57.0,provisoire_a_recalculer,
+URSS,Matilda II (Lend-Lease),armor,90.45,,109.0,73.0,provisoire_a_recalculer,
+URSS,Churchill Mk III/IV (Lend-Lease),armor,147.2,177.0,118.0,89.0,provisoire_a_recalculer,
+URSS,Universal Carrier (Lend-Lease),armor,13.65,,17.0,11.0,provisoire_a_recalculer,
+URSS,T48 / SU-57 (Lend-Lease),armor,40.4,,49.0,33.0,provisoire_a_recalculer,
+URSS,M17 MGMC (Lend-Lease),armor,34.4,42.0,28.0,21.0,provisoire_a_recalculer,
+URSS,Gaz AA 4MG,armor,31.0,38.0,25.0,19.0,provisoire_a_recalculer,
+URSS,Gaz AA HMG,armor,25.0,30.0,20.0,15.0,provisoire_a_recalculer,
+URSS,SMK ***,armor,142.48,,,,provisoire_a_recalculer,
+URSS,T-100 ***,armor,142.48,,,,provisoire_a_recalculer,
+URSS,KV-220 ***,armor,278.19,,,,provisoire_a_recalculer,
+URSS,Object 704 ***,armor,194.7,,,,provisoire_a_recalculer,
+URSS,T-44/85 ***,armor,167.2,,,201.0,provisoire_a_recalculer,
+URSS,T-44/100 ***,armor,167.2,201.0,134.0,101.0,provisoire_a_recalculer,
+URSS,A-20,armor,56.95,,69.0,46.0,provisoire_a_recalculer,
+URSS,T-43,armor,128.65,,,,provisoire_a_recalculer,
+URSS,T-54 mod. 1947 ***,armor,258.9,,311.0,208.0,provisoire_a_recalculer,
+URSS,KV 3 ***,armor,215.51,,259.0,173.0,provisoire_a_recalculer,
+URSS,KV 5 ***,armor,277.32,,,333.0,provisoire_a_recalculer,
+URSS,Object 701 (IS-4 proto) ***,armor,315.27,,,,provisoire_a_recalculer,
+URSS,Object 260 (IS-7 proto) ***,armor,350.63,,,,provisoire_a_recalculer,
+URSS,SU-122-54 ***,armor,201.7,,243.0,162.0,provisoire_a_recalculer,
+URSS,KV-13 ***,armor,107.95,108.0,87.0,65.0,provisoire_a_recalculer,
+URSS,SU-5-2 *,armor,27.65,34.0,23.0,17.0,provisoire_a_recalculer,
+URSS,SU-5-3 ***,armor,30.65,,,,provisoire_a_recalculer,
+URSS,Panzer III Ausf. E/F **,armor,46.0,56.0,46.0,37.0,provisoire_a_recalculer,
+URSS,Panzer III Ausf. G/H *,armor,57.56,70.0,58.0,47.0,provisoire_a_recalculer,
+URSS,Panzer III Ausf. J *,armor,76.25,92.0,77.0,61.0,provisoire_a_recalculer,
+URSS,Panzer III Ausf. L *,armor,81.25,98.0,82.0,65.0,provisoire_a_recalculer,
+URSS,Panzer III Ausf. M **,armor,81.25,98.0,82.0,65.0,provisoire_a_recalculer,
+URSS,Panzer III Ausf. N *,armor,74.25,90.0,75.0,60.0,provisoire_a_recalculer,
+URSS,Panzer IV Ausf. D/E *,armor,69.95,84.0,70.0,56.0,provisoire_a_recalculer,
+URSS,Panzer IV Ausf. F1 *,armor,94.25,114.0,95.0,76.0,provisoire_a_recalculer,
+URSS,Panzer IV Ausf. F2 *,armor,89.25,108.0,90.0,72.0,provisoire_a_recalculer,
+URSS,Panzer IV Ausf. G/H *,armor,95.7,,115.0,96.0,provisoire_a_recalculer,
+URSS,Panzer IV Ausf. J **,armor,80.7,,,81.0,provisoire_a_recalculer,
+URSS,Panther Ausf. D **,armor,135.15,163.0,136.0,109.0,provisoire_a_recalculer,
+URSS,Panther Ausf. A **,armor,135.15,163.0,136.0,109.0,provisoire_a_recalculer,
+URSS,Panther Ausf. G **,armor,159.45,192.0,160.0,128.0,provisoire_a_recalculer,
+URSS,Tiger I Ausf. E **,armor,132.19,159.0,133.0,106.0,provisoire_a_recalculer,
+URSS,Panzer 38(t) (capturé),armor,59.12,71.0,60.0,48.0,provisoire_a_recalculer,
+URSS,BA-64,armor,29.4,36.0,30.0,24.0,provisoire_a_recalculer,
+URSS,BA-10 & 10M,armor,61.9,75.0,62.0,50.0,provisoire_a_recalculer,
+URSS,BA-20,armor,13.65,17.0,14.0,11.0,provisoire_a_recalculer,
+URSS,BA-64B,armor,29.4,36.0,30.0,24.0,provisoire_a_recalculer,
+URSS,GAZ-67,transport,15.0,,18.0,12.0,base_confirmee_odB_periodes_a_verifier,
+URSS,Studebaker US6 (Lend-Lease),transport,3.0,,,,base_confirmee_odB_periodes_a_verifier,
+URSS,M3 Halftrack (Lend-Lease),transport,7.4,,9.0,6.0,base_confirmee_odB_periodes_a_verifier,
+URSS,Universal Carrier (Lend-Lease),transport,6.65,9,9,5,base_confirmee_odB_periodes_a_verifier,
+URSS,Komsomolets T-20,transport,12.4,13.0,10.0,8.0,base_confirmee_odB_periodes_a_verifier,
+URSS,ZiS-5 Truck,transport,3.0,,,,base_confirmee_odB_periodes_a_verifier,
+URSS,GAZ-AAA,transport,8.0,8,8,6,base_confirmee_odB_periodes_a_verifier,
+URSS,ZIS-6,transport,3.0,3.0,3.0,2.0,base_confirmee_odB_periodes_a_verifier,
+URSS,Voroshilovets,transport,11.0,14,9,8,base_confirmee_odB_periodes_a_verifier,
+URSS,STZ-5,transport,3.0,3,3,2,base_confirmee_odB_periodes_a_verifier,
+URSS,ZIS-42 Halftrack,transport,9.0,,11.0,8.0,base_confirmee_odB_periodes_a_verifier,
+URSS,Dodge WC (LL),transport,10.0,,12,8,base_confirmee_odB_periodes_a_verifier,
+URSS,Ford GPA (LL),transport,10.0,,12,8,base_confirmee_odB_periodes_a_verifier,
+URSS,GMC CCKW (LL),transport,8.0,,11,8,base_confirmee_odB_periodes_a_verifier,
+URSS,ZiS-3 76mm,gun,37.0,,45.0,30.0,provisoire_a_recalculer,
+URSS,ZiS-2 57mm,gun,33.15,40.0,27.0,20.0,provisoire_a_recalculer,
+URSS,BS-3 100mm,gun,64.0,,,77.0,provisoire_a_recalculer,
+URSS,82mm Mortar,gun,14.45,15.0,12.0,9.0,provisoire_a_recalculer,
+URSS,120mm Mortar,gun,31.05,32.0,25.0,19.0,provisoire_a_recalculer,
+URSS,160mm Mortar,gun,43.7,,53.0,35.0,provisoire_a_recalculer,
+URSS,BM-13 Katyusha,gun,13.0,16.0,11.0,8.0,provisoire_a_recalculer,
+URSS,BM-31 Katyusha,gun,32.2,,,39.0,provisoire_a_recalculer,
+URSS,37mm AA,gun,9.35,12.0,8.0,6.0,provisoire_a_recalculer,
+URSS,85mm AA,gun,21.85,27.0,18.0,14.0,provisoire_a_recalculer,
+URSS,45mm M1937,gun,33.15,34.0,27.0,20.0,provisoire_a_recalculer,
+URSS,76mm F-22,gun,37.0,37.0,30.0,23.0,provisoire_a_recalculer,
+URSS,122mm M-30,gun,31.05,32.0,25.0,19.0,provisoire_a_recalculer,
+URSS,152mm ML-20,gun,34.5,35.0,28.0,21.0,provisoire_a_recalculer,
+URSS,203mm B-4,gun,49.45,60.0,40.0,30.0,provisoire_a_recalculer,
+URSS,BM-8 Katyusha,gun,15.0,18.0,12.0,9.0,provisoire_a_recalculer,
+URSS,KS-19 100mm,gun,21.85,,,,provisoire_a_recalculer,
+URSS,76mm M1927/M1943,gun,27.0,27.0,22.0,17.0,provisoire_a_recalculer,
+URSS,76mm M1938 Montagne,gun,10.2,11.0,9.0,7.0,provisoire_a_recalculer,
+URSS,76mm M1902/30 / USV,gun,37.0,37.0,30.0,23.0,provisoire_a_recalculer,
+URSS,107mm M1910/30,gun,62.1,63.0,50.0,38.0,provisoire_a_recalculer,
+URSS,107mm M-60,gun,73.6,89.0,59.0,45.0,provisoire_a_recalculer,
+URSS,107mm Mortier M1938,gun,24.0,24.0,20.0,15.0,provisoire_a_recalculer,
+URSS,122mm A-19,gun,59.8,60.0,48.0,36.0,provisoire_a_recalculer,
+URSS,122mm M1909/37 / M1910/30,gun,27.0,27.0,22.0,17.0,provisoire_a_recalculer,
+URSS,152mm M1909/30 / M-10 / D-1,gun,34.5,,42.0,28.0,provisoire_a_recalculer,
+URSS,152mm Br-2 *,gun,51.75,52.0,42.0,32.0,provisoire_a_recalculer,
+URSS,210mm Br-17 **,gun,87.4,105.0,70.0,53.0,provisoire_a_recalculer,
+URSS,280mm Br-5 *,gun,52.9,64.0,43.0,32.0,provisoire_a_recalculer,
+URSS,305mm M1915 ***,gun,52.9,53.0,43.0,32.0,provisoire_a_recalculer,
+URSS,50mm Mortar,gun,13.6,14.0,11.0,9.0,provisoire_a_recalculer,
+URSS,25mm 72-K AA,gun,13.6,17.0,11.0,9.0,provisoire_a_recalculer,
+URSS,76mm AA M1931/M1938,gun,12.0,12.0,10.0,8.0,provisoire_a_recalculer,
+URSS,85mm D-44,gun,59.0,,,,provisoire_a_recalculer,
+URSS,Polikarpov I-16 Type 24/29,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Polikarpov I-153 Chaika,air,10.0,12.0,10.0,8.0,provisoire_a_recalculer,
+URSS,Mikoyan-Gurevich MiG-3,air,10.0,12.0,10.0,8.0,provisoire_a_recalculer,
+URSS,Lavochkin-Gorbunov-Gudkov LaGG-3 (séries 1–35),air,27.0,33.0,27.0,22.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-1,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-1B,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-7B,air,35.0,42.0,35.0,28.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-9,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-9T *,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-9K **,air,25.0,30.0,25.0,20.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-3,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-3P,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Lavochkin La-5,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Lavochkin La-5FN,air,32.0,39.0,32.0,26.0,provisoire_a_recalculer,
+URSS,Lavochkin La-7,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Polikarpov I-16 Type 5/10,air,10.0,12.0,10.0,8.0,provisoire_a_recalculer,
+URSS,Polikarpov I-16 Type 18,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Polikarpov I-153P *,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Yakovlev Yak-9P **,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Ilyushin Il-2 (single-seat early),air,35.0,42.0,35.0,28.0,provisoire_a_recalculer,
+URSS,Ilyushin Il-2M,air,41.0,50.0,41.0,33.0,provisoire_a_recalculer,
+URSS,Ilyushin Il-10,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Ilyushin Il-2 (VYa-23),air,41.0,50.0,41.0,33.0,provisoire_a_recalculer,
+URSS,Ilyushin Il-2 (NS-37) **,air,44.0,53.0,44.0,36.0,provisoire_a_recalculer,
+URSS,Petlyakov Pe-3,air,38.0,46.0,38.0,31.0,provisoire_a_recalculer,
+URSS,Bell P-39D/N/Q Airacobra (Lend Lease),air,34.0,41.0,34.0,28.0,provisoire_a_recalculer,
+URSS,Bell P-63A/C Kingcobra (Lend Lease),air,10.0,12.0,10.0,8.0,provisoire_a_recalculer,
+URSS,Curtiss P-40E/K/N Warhawk (Lend Lease) *,air,33.0,40.0,33.0,27.0,provisoire_a_recalculer,
+URSS,Hawker Hurricane Mk I/II (Lend Lease),air,28.0,34.0,28.0,23.0,provisoire_a_recalculer,
+URSS,Supermarine Spitfire Mk V (Lend Lease) **,air,28.0,34.0,28.0,23.0,provisoire_a_recalculer,
+URSS,Supermarine Spitfire Mk IX (Lend Lease) **,air,20.0,24.0,20.0,16.0,provisoire_a_recalculer,
+URSS,Douglas A-20G Boston/Havoc,air,45.0,54.0,45.0,36.0,provisoire_a_recalculer,
+URSS,Hawker Hurricane Mk IIB (Lend Lease) **,air,28.0,34.0,28.0,23.0,provisoire_a_recalculer,
+URSS,Douglas A-20B,air,40.0,48.0,40.0,32.0,provisoire_a_recalculer,
+URSS,Douglas A-20J/K,air,40.0,48.0,40.0,32.0,provisoire_a_recalculer,
