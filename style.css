@@ -6,3 +6,6 @@
 @media(max-width:650px){.vehicle-card>summary{font-size:0.94rem;line-height:1.5}.vehicle-card .grid{grid-template-columns:1fr}}
 
 .formation-picker{background:#102137;border:1px solid #446384;border-radius:12px;padding:14px;margin:18px 0}.formation-picker button{margin-top:10px}.formation-shell{border:1px solid #415875;background:#132237;border-radius:10px;padding:10px 14px;margin:10px 0}.formation-shell>summary{padding:9px 4px;font-size:14px}.formation-shell .formation{margin:12px 0 0}.selected-options{display:flex;flex-wrap:wrap;gap:6px;grid-column:1/-1}.selected-options button{background:#29475d}.formation-shell[open]{border-color:#71a2d3}
+
+/* V0.9.1 — Ordres spéciaux */
+.special-orders{margin:1rem 0;padding:1rem;border:1px solid #69788766;border-radius:10px}.special-orders h4{margin:.65rem 0}.special-orders ul{margin:.5rem 0;padding-left:1.5rem}.special-orders label{display:block;margin:.65rem 0}
