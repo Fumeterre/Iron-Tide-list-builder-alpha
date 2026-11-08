@@ -1,0 +1,1825 @@
+[
+  {
+    "table": 1,
+    "title": "Support aérien / FRONT OUEST",
+    "rows": [
+      [
+        "Support aérien / FRONT OUEST",
+        "39-41",
+        "42-43",
+        "44-45"
+      ],
+      [
+        "Support aérien / FRONT OUEST",
+        "Prioritaire",
+        "Normal",
+        "Limité"
+      ]
+    ]
+  },
+  {
+    "table": 2,
+    "title": "Support aérien / FRONT EST",
+    "rows": [
+      [
+        "Support aérien / FRONT EST",
+        "39-41",
+        "42-43",
+        "44-45"
+      ],
+      [
+        "Support aérien / FRONT EST",
+        "Prioritaire",
+        "Prioritaire",
+        "Normal"
+      ]
+    ]
+  },
+  {
+    "table": 3,
+    "title": "Support aérien / FRONT AFRIQUE",
+    "rows": [
+      [
+        "Support aérien / FRONT AFRIQUE",
+        "39-41",
+        "42-43",
+        "44-45"
+      ],
+      [
+        "Support aérien / FRONT AFRIQUE",
+        "Prioritaire",
+        "Prioritaire 42/ Normal 43",
+        "Limité"
+      ]
+    ]
+  },
+  {
+    "table": 4,
+    "title": "Cie Grenadiers",
+    "rows": [
+      [
+        "Cie Grenadiers",
+        "Date",
+        "Points",
+        "Cie Grenadiers",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète",
+        "39-45",
+        "",
+        "Vélo",
+        "39-40/45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "40-45",
+        "",
+        "Support MMG (1 ou 2)",
+        "39-45",
+        ""
+      ],
+      [
+        "Section à 4 groupes",
+        "39-41",
+        "",
+        "Support HMG (1 ou 2)",
+        "39-45",
+        ""
+      ],
+      [
+        "Section d’assaut",
+        "44-45",
+        "",
+        "Support Mortier 50 mm",
+        "39-43",
+        ""
+      ],
+      [
+        "Passer Elite",
+        "40-45",
+        "",
+        "Support Mortier 81 mm",
+        "42-45",
+        ""
+      ],
+      [
+        "Passer Conscrit",
+        "45",
+        "",
+        "Support Fusil ATR",
+        "39-42",
+        ""
+      ],
+      [
+        "Passer Fanatique",
+        "41-45",
+        "",
+        "Support Panzerschreck",
+        "42-45",
+        ""
+      ],
+      [
+        "Passer Hésitant",
+        "41-45",
+        "",
+        "Panzerfaust",
+        "42-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 5,
+    "title": "Cie de Gebirgsjäger",
+    "rows": [
+      [
+        "Cie de Gebirgsjäger",
+        "Date",
+        "Points",
+        "Cie de Gebirgsjäger",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète",
+        "39-45",
+        "",
+        "Support MMG (1 ou 2)",
+        "39-45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "40-45",
+        "",
+        "Support HMG (1 ou 2)",
+        "39-45",
+        ""
+      ],
+      [
+        "Section à 4 groupes",
+        "39-41",
+        "",
+        "Support Fusil ATR",
+        "39-42",
+        ""
+      ],
+      [
+        "Section lourde",
+        "42-45",
+        "",
+        "Support Panzerschreck",
+        "42-45",
+        ""
+      ],
+      [
+        "Passer Elite",
+        "40-45",
+        "",
+        "Panzerfaust",
+        "42-45",
+        ""
+      ],
+      [
+        "Passer Tenace",
+        "39/45",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 6,
+    "title": "Cie de Pzgrenadiers",
+    "rows": [
+      [
+        "Cie de Pzgrenadiers",
+        "Date",
+        "Points",
+        "Cie de Pzgrenadiers",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète",
+        "39-45",
+        "",
+        "Support lance-flammes",
+        "39-45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "39-45",
+        "",
+        "Support HMG (1 ou 2)",
+        "39-45",
+        ""
+      ],
+      [
+        "Passer Elite",
+        "40-45",
+        "",
+        "Support Mortier 81mm",
+        "42-45",
+        ""
+      ],
+      [
+        "Passer Fanatique (SS)",
+        "41-45",
+        "",
+        "Support Fusil ATR",
+        "39-42",
+        ""
+      ],
+      [
+        "Section de pionniers",
+        "39-45",
+        "",
+        "Panzerschreck (1 ou 2)",
+        "42-45",
+        ""
+      ],
+      [
+        "Passez hésitant",
+        "43-45",
+        "",
+        "Panzerfaust",
+        "42-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 7,
+    "title": "Cie de Pionniers",
+    "rows": [
+      [
+        "Cie de Pionniers",
+        "Date",
+        "Points",
+        "Cie de Pionniers",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète",
+        "39-45",
+        "",
+        "Support MMG",
+        "41-45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "39-45",
+        "",
+        "Support Mortier 81mm",
+        "39-45",
+        ""
+      ],
+      [
+        "Une seule section",
+        "39-45",
+        "",
+        "Support Lance-flammes",
+        "39-45",
+        ""
+      ],
+      [
+        "Passez Fanatique",
+        "41-45",
+        "",
+        "Charges explosives",
+        "39-45",
+        ""
+      ],
+      [
+        "Passez Déterminé",
+        "44-45",
+        "",
+        "Grenades fumigènes",
+        "39-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 8,
+    "title": "Cie de Fallschirmjäger",
+    "rows": [
+      [
+        "Cie de Fallschirmjäger",
+        "Date",
+        "Points",
+        "Cie de Fallschirmjäger",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète ASS",
+        "39-41",
+        "",
+        "Support MMG",
+        "42-45",
+        ""
+      ],
+      [
+        "Compagnie complète LOURDE",
+        "42-45",
+        "",
+        "Support Mortier 81mm",
+        "42-45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "42-45",
+        "",
+        "Support Panzerschreck",
+        "42-45",
+        ""
+      ],
+      [
+        "Section de pionnier",
+        "42-45",
+        "",
+        "Panzerfaust",
+        "42-45",
+        ""
+      ],
+      [
+        "Troupes de choc",
+        "44-45",
+        "",
+        "Support Lance-flammes",
+        "42-45",
+        ""
+      ],
+      [
+        "Aéroportée",
+        "39-41",
+        "",
+        "Charges explosives",
+        "42-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 9,
+    "title": "Section d'éclaireurs",
+    "rows": [
+      [
+        "Section d'éclaireurs",
+        "Date",
+        "Points",
+        "Section d'éclaireurs",
+        "Date",
+        "Points"
+      ],
+      [
+        "Section complète",
+        "39-45",
+        "",
+        "Passer Recrue",
+        "42-45",
+        ""
+      ],
+      [
+        "Réduction à 2 unités",
+        "39-45",
+        "",
+        "Passer PM",
+        "39-45",
+        ""
+      ],
+      [
+        "Passer Tenace",
+        "",
+        "",
+        "Passer Assaut",
+        "44-45",
+        ""
+      ],
+      [
+        "Passer Conscrit",
+        "",
+        "",
+        "Passer Lourde",
+        "43-45",
+        ""
+      ],
+      [
+        "Passer Hésitant",
+        "",
+        "",
+        "Panzerfaust",
+        "43-45",
+        ""
+      ],
+      [
+        "Passer Fanatique",
+        "42-45",
+        "",
+        "Optique IR",
+        "45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 10,
+    "title": "Section de chasseurs de char",
+    "rows": [
+      [
+        "Section de chasseurs de char",
+        "Date",
+        "Points",
+        "Section de chasseurs de char",
+        "Date",
+        "Points"
+      ],
+      [
+        "Section complète",
+        "43-45",
+        "",
+        "Passer Fanatique",
+        "44-45",
+        ""
+      ],
+      [
+        "Passer Tenace",
+        "43-45",
+        "",
+        "Charge explosive",
+        "43-45",
+        ""
+      ],
+      [
+        "Passer Hésitant",
+        "44-45",
+        "",
+        "Panzerfaust",
+        "43-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 11,
+    "title": "Cie de Volksgrenadiers",
+    "rows": [
+      [
+        "Cie de Volksgrenadiers",
+        "Date",
+        "Points",
+        "Cie de Volksgrenadiers",
+        "Date",
+        "Points"
+      ],
+      [
+        "Compagnie complète",
+        "44-45",
+        "",
+        "Support MMG",
+        "44-45",
+        ""
+      ],
+      [
+        "Réduction à 2 sections",
+        "44-45",
+        "",
+        "Support HMG",
+        "44-45",
+        ""
+      ],
+      [
+        "1 section inf.LIGNE",
+        "44-45",
+        "",
+        "Panzerfaust",
+        "44-45",
+        ""
+      ],
+      [
+        "Passer Hésitant",
+        "44-45",
+        "",
+        "Vélos",
+        "45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 12,
+    "title": "Volkstürm",
+    "rows": [
+      [
+        "Volkstürm",
+        "Date",
+        "Points",
+        "Volkstürm",
+        "Date",
+        "Points"
+      ],
+      [
+        "Détachement complet",
+        "45",
+        "",
+        "Panzerfaust",
+        "45",
+        ""
+      ],
+      [
+        "/ section attachée",
+        "45",
+        "",
+        "Vélos",
+        "45",
+        ""
+      ],
+      [
+        "Passer Déterminé",
+        "45",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 13,
+    "title": "Section d'éclaireurs Cavalerie",
+    "rows": [
+      [
+        "Section d'éclaireurs Cavalerie",
+        "Date",
+        "Points",
+        "Section d'éclaireurs Cavalerie",
+        "Date",
+        "Points"
+      ],
+      [
+        "Section complète",
+        "39-41",
+        "",
+        "Section complète",
+        "44-45",
+        ""
+      ],
+      [
+        "Réduction à 2 unités",
+        "39-41",
+        "",
+        "Réduction à 2 unités",
+        "44-45",
+        ""
+      ],
+      [
+        "Section complète",
+        "42-43",
+        "",
+        "Passer hésitant",
+        "44-45",
+        ""
+      ],
+      [
+        "Réduction à 2 unités",
+        "42-43",
+        "",
+        "Passer PM",
+        "39-41",
+        ""
+      ],
+      [
+        "+ 1 unité",
+        "39-43",
+        "",
+        "Support MMG",
+        "39-45",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 14,
+    "title": "Section légère de reco",
+    "rows": [
+      [
+        "Section légère de reco",
+        "Date",
+        "Effectif",
+        "Section lourde de reco",
+        "Date",
+        "Effectif",
+        "Véhicule capturé de reco",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Sdkfz 221 ou 223",
+        "39-41",
+        "2-4",
+        "Sdkfz 231 (6 roues)",
+        "39-41",
+        "2-4",
+        "FRONT EST",
+        "",
+        ""
+      ],
+      [
+        "Sdkfz 222",
+        "39-41",
+        "2-4",
+        "Sdkfz 231 (8 roues)",
+        "39-41",
+        "2-4",
+        "Panhard P-178 (f)",
+        "1941",
+        "2-4"
+      ]
+    ]
+  },
+  {
+    "table": 15,
+    "title": "Section légère de reco",
+    "rows": [
+      [
+        "Section légère de reco",
+        "Date",
+        "Effectif",
+        "Section lourde de reco",
+        "Date",
+        "Effectif",
+        "Section blindée de reco",
+        "Date",
+        "Effectif",
+        "Véhicule capturé de reco",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Sdkfz 221",
+        "42-43",
+        "2-3",
+        "Sdkfz 231 (8 roues)",
+        "42-43",
+        "2-3",
+        "Panzer II luch(*)",
+        "42-45",
+        "2-3              0-1",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "Sdkfz 221 PzB41 (*)",
+        "42-45",
+        "2-3",
+        "Sdkfz 233 (8 roues)",
+        "42-45",
+        "2-3",
+        "BA-10 (FRONT EST)",
+        "42-45",
+        "2-3              0-1",
+        "Panhard P-178 (f)",
+        "42-43",
+        "2-3"
+      ],
+      [
+        "Sdkfz 222B",
+        "42-45",
+        "2-3",
+        "Sdkfz 234 (/1/2/3)",
+        "42-45",
+        "2-3",
+        "Sdkfz 140/1(*)",
+        "44-45",
+        "2-3",
+        "Panhard P-204(f) 45mm (*)",
+        "42-45",
+        "0-3"
+      ],
+      [
+        "Sdkfz 250 Neue/Alte",
+        "42-45",
+        "2-3",
+        "Sdkfz 234/4(*)",
+        "42-45",
+        "2-3",
+        "Panzer II",
+        "44-45",
+        "2-3",
+        "Pz.Sp.Wg. P204(f) 50mm (**)",
+        "44-45",
+        "0-2"
+      ]
+    ]
+  },
+  {
+    "table": 16,
+    "title": "Section AC léger",
+    "rows": [
+      [
+        "Section AC léger",
+        "Date",
+        "Effectif",
+        "Section AC léger",
+        "Date",
+        "Effectif",
+        "Section AC léger",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Pak36",
+        "39-45",
+        "2-3",
+        "Pak36(t) 47mm",
+        "39-45",
+        "2-3",
+        "MMG",
+        "39-45",
+        "1"
+      ],
+      [
+        "Sd.Kfz. 10/4 Pak 36 (*)",
+        "39-40",
+        "2-3",
+        "Pak41 42mm",
+        "41-43(*)",
+        "2-3",
+        "HMG",
+        "41-45",
+        "1"
+      ],
+      [
+        "Pak36 sur chenillette renaud (*)(FRANCE/FRONT EST)",
+        "40-43",
+        "2-3",
+        "Pak 38 (50mm)",
+        "40(*)41-45",
+        "2-3",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 17,
+    "title": "Section AC moyen",
+    "rows": [
+      [
+        "Section AC moyen",
+        "Date",
+        "Effectif",
+        "Section AC moyen",
+        "Date",
+        "Effectif",
+        "Section AC moyen",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Pak 97/38",
+        "41-45",
+        "2-3",
+        "RSO Pak40 (FRONT EST)",
+        "42-45",
+        "2-3",
+        "MMG",
+        "39-45",
+        "1"
+      ],
+      [
+        "Pak 40",
+        "42-45",
+        "2-3",
+        "Pak41 7,5cm",
+        "41-43",
+        "2-3",
+        "HMG",
+        "41-45",
+        "1"
+      ],
+      [
+        "7.62 cm Pak 36(r) (AFRIQUE/FRON EST)",
+        "41-43",
+        "2-3",
+        "Pak43 88mm",
+        "44-45",
+        "1-3",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 18,
+    "title": "Section AC lourde",
+    "rows": [
+      [
+        "Section AC lourde",
+        "Date",
+        "Effectif",
+        "Section AC lourde",
+        "Date",
+        "Effectif",
+        "Section AC lourde",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Flak18",
+        "39-45",
+        "1-2",
+        "8.8 cm Flak 18 auf Sd.Kfz. 8 BUFLA (*)",
+        "39-41",
+        "1-2",
+        "MMG",
+        "39-45",
+        "1"
+      ],
+      [
+        "Flak36",
+        "39-45",
+        "1-2",
+        "VOMAG Flak 36/37",
+        "42-45",
+        "1-2",
+        "HMG",
+        "41-45",
+        "1"
+      ],
+      [
+        "Flak41(*)(RESERVE 45)(Afrique, Allemagne 45)",
+        "41-42/45",
+        "1-2",
+        "8.8 cm Flak 37 (Sf.) auf 18t Zugkraftwagen (***)",
+        "44-45",
+        "2-3",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 19,
+    "title": "Section AA léger",
+    "rows": [
+      [
+        "Section AA léger",
+        "Date",
+        "Effectif",
+        "Section AC léger",
+        "Date",
+        "Effectif",
+        "Section AC léger blindé",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Flak 20mm",
+        "39-45",
+        "2-3",
+        "Sdkfz 10/5 20mm",
+        "39-45",
+        "2-3",
+        "Flakpanzer I 20mm(*)",
+        "41-42",
+        "2-3"
+      ],
+      [
+        "Flak 4x20mm",
+        "42-45",
+        "2-3",
+        "Sdkfz 7/1 4x20mm",
+        "42-45",
+        "2-3",
+        "Flakpanzer 38(t) 20mm",
+        "41-45",
+        "2-3"
+      ],
+      [
+        "Flak 37mm",
+        "39-45",
+        "2-3",
+        "Sdkfz 7/2 37mm",
+        "39-45",
+        "2-3",
+        "Mobelwagen/Ostwind 37mm",
+        "44-45",
+        "2-3"
+      ],
+      [
+        "Flakzwilling 43 (*)",
+        "43-45",
+        "2-3",
+        "Ster 1500A 20mm",
+        "41-44",
+        "2-3",
+        "Wirbelwind (*) 4x20mm",
+        "44-45",
+        "2-3"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Kugelblitz (**) 2x30mm",
+        "45",
+        "0-2"
+      ]
+    ]
+  },
+  {
+    "table": 20,
+    "title": "Section AA lourde",
+    "rows": [
+      [
+        "Section AA lourde",
+        "Date",
+        "Effectif",
+        "Section AA lourde",
+        "Date",
+        "Effectif",
+        "Section AA lourde",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Flak18",
+        "39-45",
+        "1-2",
+        "Flak 10,5cm",
+        "39-45",
+        "1-2",
+        "Flak 12,8cm",
+        "44-45",
+        "1-févr."
+      ],
+      [
+        "Flak36",
+        "39-45",
+        "1-2",
+        "VOMAG Flak 36/37",
+        "39-45",
+        "1-2",
+        "MMG",
+        "39-45",
+        "1"
+      ],
+      [
+        "Flak41(*)(RESERVE 45)(Afrique, Allemagne 45)",
+        "41-42/45",
+        "1-2",
+        "8.8 cm Flak 37 (Sf.) auf 18t Zugkraftwagen (***)",
+        "44-45",
+        "1-2",
+        "HMG",
+        "41-45",
+        "1"
+      ]
+    ]
+  },
+  {
+    "table": 21,
+    "title": "Section Appui feu",
+    "rows": [
+      [
+        "Section Appui feu",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Obusier léger de 75mm",
+        "39-45",
+        "1-2"
+      ],
+      [
+        "Obusier lourd de 150mm",
+        "39-45",
+        "1-2"
+      ],
+      [
+        "Sig33-IB Bison (FRANCE, fRONT EST)",
+        "39-41",
+        "1-2"
+      ],
+      [
+        "Sig33IIB-Bison (AFRIQUE)",
+        "42-43",
+        "1-2"
+      ],
+      [
+        "Grille H/M 150mm",
+        "43-45",
+        "1-2"
+      ]
+    ]
+  },
+  {
+    "table": 22,
+    "title": "Support Artillerie",
+    "rows": [
+      [
+        "Support Artillerie",
+        "Date",
+        "Effectif",
+        "Support Artillerie",
+        "Date",
+        "Effectif",
+        "Support Artillerie",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Artillerie 75mm",
+        "39-45",
+        "2-6",
+        "Mortier 81mm",
+        "39-45",
+        "2-6",
+        "Nebelwerfer 41 15cm",
+        "41-45",
+        "2-6"
+      ],
+      [
+        "Artillerie 105mm",
+        "39-45",
+        "2-6",
+        "10 cm Nebelwerfer 35 (FRONT OUEST, FRONT EST, SICILE/ITALIE)",
+        "39-43",
+        "2-6",
+        "Nebelwerfer 41 28/32 cm",
+        "41-45",
+        "2-6"
+      ],
+      [
+        "Artillerie de 150mm",
+        "39-45",
+        "2-6",
+        "Mortier 120mm",
+        "43-45",
+        "2-6",
+        "Nebelwerfer 42 21 cm",
+        "43-45",
+        "2-6"
+      ],
+      [
+        "Artillerie de 170mm (*)",
+        "39-45",
+        "2-6",
+        "MMG/HMG",
+        "39-45",
+        "0-2",
+        "Nebelwerfer 42 30cm",
+        "43-45",
+        "2-6"
+      ]
+    ]
+  },
+  {
+    "table": 23,
+    "title": "Support artillerie blindée",
+    "rows": [
+      [
+        "Support artillerie blindée",
+        "Date",
+        "Effectif",
+        "Support artillerie blindée",
+        "Date",
+        "Effectif",
+        "Support artillerie blindée",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Wespe 105mm",
+        "42-45",
+        "2-6",
+        "Reihenwerfer auf Somua MCG (f)(*)(FRANCE)",
+        "43-45",
+        "2-3",
+        "Wurfrahmen 40 de 28/32cm",
+        "41-45",
+        "2-6"
+      ],
+      [
+        "Hummel 155mm",
+        "43-45",
+        "2-6",
+        "8 cm Granatwerfer auf S307(f)(*)(FRONT OUEST)",
+        "41-45",
+        "2-3",
+        "R-Vielfachwerfer 8cm",
+        "42-45",
+        "2-6"
+      ],
+      [
+        "Grille 17/21 (***)",
+        "45",
+        "2-3",
+        "8 cm GrW auf Renault UE (f)(*)(FRONT OUEST/FRON EST)",
+        "41-45",
+        "2-3",
+        "Panzerwerfer 42",
+        "43-45",
+        "2-6"
+      ],
+      [
+        "AFRIQUE/NORMANDIE 41-44",
+        "AFRIQUE/NORMANDIE 41-44",
+        "AFRIQUE/NORMANDIE 41-44",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Lorraine Schepper 105 ou 150mm",
+        "41-44",
+        "2-6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 24,
+    "title": "Section blindés légers",
+    "rows": [
+      [
+        "Section blindés légers",
+        "Date",
+        "Effectif",
+        "Section blindés légers",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Panzer I (POLOGNE/FRANCE)",
+        "39-41",
+        "4-6",
+        "Panzer 38(t) (jusqu'à2 panzer I (39-41))",
+        "39-43",
+        "3-5"
+      ],
+      [
+        "Panzer I F (FRONT EST)",
+        "42-43",
+        "2-4",
+        "H35",
+        "44",
+        "2-5"
+      ],
+      [
+        "Panzer II A à E (jusqu'à 2 panzer I)",
+        "39-41",
+        "3-5",
+        "H39 47mm",
+        "44",
+        "2-5"
+      ],
+      [
+        "Panzer II F",
+        "41-42",
+        "3-5",
+        "R35",
+        "44",
+        "2-5"
+      ],
+      [
+        "AFRIQUE (jusqu'à 2 M3A1  Honey Stuart)",
+        "41-42",
+        "3-5",
+        "FT 17 730/730(M)(***)",
+        "44",
+        "2-4"
+      ],
+      [
+        "Panzer 35(t)",
+        "39-41",
+        "3-5",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 25,
+    "title": "Section blindés moyens",
+    "rows": [
+      [
+        "Section blindés moyens",
+        "Date",
+        "Effectif",
+        "Section blindés moyens",
+        "Date",
+        "Effectif",
+        "Section blindés moyens",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Panzer III A/B/C/D/E/F/G/ ou H",
+        "39-41",
+        "3-5",
+        "Panzer III G/H/I/J/L/M ou N",
+        "42-43",
+        "3-5",
+        "Panzer IVH ou J",
+        "44-45",
+        "2-5"
+      ],
+      [
+        "AFRIQUE Panzer III D/E/F/H",
+        "39-41",
+        "3-5",
+        "Panzer IV D/F1/F2",
+        "42-43",
+        "3-5",
+        "remplacer par panzer III L/M ou N",
+        "44-45",
+        "0-3"
+      ],
+      [
+        "Panzer IV E ou F1",
+        "39-41",
+        "2-4",
+        "Panzer IIF en remplacement",
+        "42-43",
+        "0-2",
+        "StuG III F/G ou Stug IV",
+        "44-45",
+        "2-5"
+      ],
+      [
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST",
+        "Panther A ou G",
+        "44-45",
+        "2-5"
+      ],
+      [
+        "T34-M40 ou KV1 M39/40",
+        "41",
+        "0-1",
+        "T-70 ou T34",
+        "42-43",
+        "0-2",
+        "remplacer par Panther F (***)",
+        "45",
+        "0-2"
+      ],
+      [
+        "T-26, BT-7 ou T60",
+        "41",
+        "0-3",
+        "KV1, KV2 ou versions convertie",
+        "42-43",
+        "0-1",
+        "FRONT OUEST",
+        "",
+        ""
+      ],
+      [
+        "AFRIQUE",
+        "AFRIQUE",
+        "AFRIQUE",
+        "Panther D(*)",
+        "juil/oct 43",
+        "2-5",
+        "remplacer par sherman 75mm/76mm",
+        "44-45",
+        "0-3"
+      ],
+      [
+        "M3A1 Honey Sutart, Crusader I/II ou MAthilda II",
+        "41",
+        "0-1",
+        "Panther A (*)",
+        "nov-dec 43",
+        "2-5",
+        "remplacer par sherman firefly ou sherman Jumbo",
+        "44-45",
+        "0-1"
+      ],
+      [
+        "",
+        "",
+        "",
+        "AFRIQUE",
+        "AFRIQUE",
+        "AFRIQUE",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "",
+        "",
+        "",
+        "M3A1 Honey Sutart, Crusader ou Valentine",
+        "42-43",
+        "0-1",
+        "Remplacer par T34 ou chard lourd soviétique",
+        "44-45",
+        "0-1"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "ITALIE/BALKANS",
+        "ITALIE/BALKANS",
+        "ITALIE/BALKANS"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "M14/41 ou et M15/42",
+        "44-45",
+        "2-4"
+      ]
+    ]
+  },
+  {
+    "table": 26,
+    "title": "Section blindés lourds",
+    "rows": [
+      [
+        "Section blindés lourds",
+        "Date",
+        "Effectif",
+        "Section blindés lourds",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Tigre I(*)",
+        "42-43",
+        "1-3",
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "Escorte de panzer III L/M ou N",
+        "42-43",
+        "0-3",
+        "KV1 (*)",
+        "43-45",
+        "1-3"
+      ],
+      [
+        "Tigre I",
+        "44-45",
+        "1-3",
+        "KV1 (*)",
+        "43-45",
+        "1-3"
+      ],
+      [
+        "Tigre II (*)",
+        "44-45",
+        "1-3",
+        "Mathilda (r) (***)",
+        "43-45",
+        "1-3"
+      ],
+      [
+        "Escorte de Panther A/G ou panzer IV H/J",
+        "44-45",
+        "1-2",
+        "FRONT OUEST",
+        "FRONT OUEST",
+        "FRONT OUEST"
+      ],
+      [
+        "Maus (***)",
+        "45",
+        "1-2",
+        "Churchill (*)",
+        "44-45",
+        "1-2"
+      ]
+    ]
+  },
+  {
+    "table": 27,
+    "title": "Section canons d'assaut",
+    "rows": [
+      [
+        "Section canons d'assaut",
+        "Date",
+        "Effectif",
+        "Section canons d'assaut",
+        "Date",
+        "Effectif",
+        "Section canons d'assaut",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Panzer IV A/B/C",
+        "39-40",
+        "1-3",
+        "Stug III F/G ou StuG IV (44-45)",
+        "43-45",
+        "2-5",
+        "ITALIE/BALKANS",
+        "ITALIE/BALKANS",
+        "ITALIE/BALKANS"
+      ],
+      [
+        "StuG A/B/C/D (FRONT OUEST/FRONT EST)",
+        "41-42",
+        "1-2",
+        "StuH en remplacement",
+        "43-45",
+        "0-2",
+        "Stug 75/18 ou 75/34",
+        "44-45",
+        "2-3"
+      ],
+      [
+        "Stug III E",
+        "41",
+        "1-3",
+        "Brummbär (*)(DETACHEE)",
+        "43-45",
+        "2-4",
+        "Stug 105/25 en remplacement",
+        "44-45",
+        "0-1"
+      ],
+      [
+        "STUG III A/B/C/D/E/F",
+        "42-43",
+        "2-5",
+        "SturmTiger (Ardennes/Allemagne)(*) DETACHEE",
+        "44-45",
+        "1-2",
+        "StuG M42 75/18 (*) ou 74 34 (*) ou 105/25 (ù*) ou 75/46 (*)",
+        "44-45",
+        "2-3"
+      ],
+      [
+        "StuIG 33 B (FRONT EST)",
+        "43",
+        "2-3",
+        "Sdkfz 250 OP",
+        "42-45",
+        "0-1",
+        "Sdkfz Ammo",
+        "43-45",
+        "0-1"
+      ]
+    ]
+  },
+  {
+    "table": 28,
+    "title": "Section chasseurs de chars",
+    "rows": [
+      [
+        "Section chasseurs de chars",
+        "Date",
+        "Effectif",
+        "Section chasseurs de chars lourds",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Jagdpanzer I",
+        "39-43",
+        "2-4",
+        "Nashorn",
+        "44-45",
+        "1-2"
+      ],
+      [
+        "Sdkfz 10 pak38 (*)(FRONT OUEST/EST)",
+        "41-41",
+        "1-2",
+        "Elefant",
+        "44-45",
+        "1-2"
+      ],
+      [
+        "PanzerJager 35R",
+        "42-43",
+        "1-3",
+        "Waffenträger Krupp-Steyr 8,8cm Pak 43(***)",
+        "45",
+        "1-2"
+      ],
+      [
+        "Marder I",
+        "42-43",
+        "2-4",
+        "Jagdpanther",
+        "44-45",
+        "2-5"
+      ],
+      [
+        "Marder II",
+        "42-45",
+        "2-4",
+        "JagdTiger(*)",
+        "44-45",
+        "1-3"
+      ],
+      [
+        "Marder III",
+        "42-45",
+        "2-4",
+        "AFRIQUE",
+        "AFRIQUE",
+        "AFRIQUE"
+      ],
+      [
+        "Jagdpanzer IV/L48",
+        "44-45",
+        "2-5",
+        "Marder I, II ou III 76(r)",
+        "41-42",
+        "2-5"
+      ],
+      [
+        "Jagdpanzer IV L70 A(*)",
+        "44-45",
+        "2-5",
+        "sdkfz 7 76(r) Diana",
+        "41-42",
+        "1-3"
+      ],
+      [
+        "Jagdpanzer L70",
+        "44-45",
+        "2-5",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  {
+    "table": 29,
+    "title": "Section chasseurs de chars",
+    "rows": [
+      [
+        "Section chasseurs de chars",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "AFRIQUE",
+        "AFRIQUE",
+        "AFRIQUE"
+      ],
+      [
+        "Marder I, II ou III 76(r)",
+        "41-42",
+        "2-5"
+      ],
+      [
+        "sdkfz 7 76(r) Diana",
+        "41-42",
+        "1-3"
+      ],
+      [
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "Marder II",
+        "43-45",
+        "2-4"
+      ],
+      [
+        "Marder III ou Marder III 76(r)",
+        "44-45",
+        "2-4"
+      ],
+      [
+        "Dicker Max",
+        "41-42",
+        "1-2"
+      ],
+      [
+        "Sturer Emil",
+        "42-43",
+        "1-2"
+      ],
+      [
+        "Hornisse",
+        "44-45",
+        "1-2"
+      ],
+      [
+        "Ferdinand",
+        "42-45",
+        "1-2"
+      ],
+      [
+        "SU 76(r)/SU 85(r) ou SU 100 (r)(*)",
+        "43-45",
+        "2-4"
+      ],
+      [
+        "Hetzer",
+        "",
+        "2-5"
+      ],
+      [
+        "ITALIE",
+        "ITALIE",
+        "ITALIE"
+      ],
+      [
+        "Semovente 90/53",
+        "44-45",
+        "2-4"
+      ]
+    ]
+  },
+  {
+    "table": 30,
+    "title": "Chars poseurs de pont",
+    "rows": [
+      [
+        "Chars poseurs de pont",
+        "Type Pont",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Brückenleger I (*)(POLOGNE/FRANCE)",
+        "Léger",
+        "39-40",
+        "1-2"
+      ],
+      [
+        "Brückenleger II (*)",
+        "Moyen",
+        "39-42",
+        "1-2"
+      ],
+      [
+        "Brückenleger Ivc (FRONT EST)",
+        "Moyen",
+        "40-43",
+        "1-2"
+      ],
+      [
+        "Brückenleger IV",
+        "Moyen",
+        "43-45",
+        "1-2"
+      ],
+      [
+        "Brückenleger Panther(***)",
+        "Lourd",
+        "45",
+        "1-2"
+      ],
+      [
+        "Sturmstegpanzer IV",
+        "Léger",
+        "44-45",
+        "1-2"
+      ]
+    ]
+  },
+  {
+    "table": 31,
+    "title": "Chars Lance-Flamme",
+    "rows": [
+      [
+        "Chars Lance-Flamme",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Panzer II LF",
+        "39-40",
+        "1-3"
+      ],
+      [
+        "Panzer III LF",
+        "39-42",
+        "1-3"
+      ],
+      [
+        "NORMANDIE",
+        "NORMANDIE",
+        "NORMANDIE"
+      ],
+      [
+        "Pz B2 LF(*)",
+        "43-45",
+        "1-2"
+      ],
+      [
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "T26-LF(r)(*)",
+        "41-43",
+        "1-3"
+      ],
+      [
+        "KV-8 LF(r)(***)",
+        "43-45",
+        "1-2"
+      ],
+      [
+        "Hetzer LF",
+        "44-45",
+        "1-3"
+      ]
+    ]
+  },
+  {
+    "table": 32,
+    "title": "Chars Génie",
+    "rows": [
+      [
+        "Chars Génie",
+        "Date",
+        "Effectif"
+      ],
+      [
+        "Panzer I charge explosive (*)",
+        "19-41",
+        "1-3"
+      ],
+      [
+        "FRONT EST",
+        "FRONT EST",
+        "FRONT EST"
+      ],
+      [
+        "Panzer III J ou M + Borgward IV(*)",
+        "43",
+        "2-3"
+      ],
+      [
+        "StuG III F + Borgward IV (*)",
+        "43",
+        "2-3"
+      ],
+      [
+        "POLOGNE/ALLEMAGNE/ARDENNES",
+        "POLOGNE/ALLEMAGNE/ARDENNES",
+        "POLOGNE/ALLEMAGNE/ARDENNES"
+      ],
+      [
+        "Tigre  I + Borgward (*)",
+        "44-45",
+        "2-3"
+      ],
+      [
+        "Stug III G ou IV + borgward (*)",
+        "44-45",
+        "2-3"
+      ]
+    ]
+  }
+]
