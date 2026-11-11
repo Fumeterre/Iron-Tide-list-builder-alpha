@@ -2,6 +2,8 @@
 (()=>{
  const mq=window.matchMedia('(max-width: 700px)');
  let section='formations';
+ const sectionScroll=new Map();
+ let lastSection=section;
  const labels=['Bataille','Budget','Formations','Conformité','Références','Sauvegarde'];
  const ids=['battle','budget','formations','checks','references','save'];
  function enhance(){
@@ -27,8 +29,8 @@
   const jump=document.createElement('button');jump.type='button';jump.textContent='Voir les formations';jump.dataset.mobileGo='formations';budget.appendChild(jump);
   document.body.classList.toggle('it-mobile',mq.matches);
  }
- document.addEventListener('click',e=>{const b=e.target.closest('[data-mobile-go]');if(!b)return;section=b.dataset.mobileGo;enhance();window.scrollTo({top:0,behavior:'smooth'})});
- const obs=new MutationObserver(()=>{if(document.querySelector('#app main')){obs.disconnect();enhance();obs.observe(document.getElementById('app'),{childList:true,subtree:false})}});
- obs.observe(document.getElementById('app'),{childList:true,subtree:false});
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-mobile-go]');if(!b)return;sectionScroll.set(section,window.scrollY);section=b.dataset.mobileGo;enhance();window.scrollTo({top:sectionScroll.get(section)||0,behavior:'instant'})});
+ document.addEventListener('iron-tide:rendered',enhance);
+ if(document.querySelector('#app main'))enhance();
  mq.addEventListener('change',enhance);
 })();
