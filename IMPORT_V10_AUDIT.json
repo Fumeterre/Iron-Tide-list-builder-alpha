@@ -1,0 +1,188 @@
+{
+  "previous_entries": 492,
+  "current_entries": 521,
+  "updated_by_nation": {
+    "Allemagne": 196,
+    "URSS": 213
+  },
+  "added_by_nation": {
+    "Allemagne": 16,
+    "URSS": 13
+  },
+  "new_entries": [
+    [
+      "Allemagne",
+      "VK 30.01 (H) ***",
+      "armor",
+      "medium"
+    ],
+    [
+      "Allemagne",
+      "VK 30.01 (P) ***",
+      "armor",
+      "medium"
+    ],
+    [
+      "Allemagne",
+      "VK 30.02 (DB) ***",
+      "armor",
+      "medium"
+    ],
+    [
+      "Allemagne",
+      "Neubaufahrzeug (Nb.Fz.) *",
+      "armor",
+      "heavy"
+    ],
+    [
+      "Allemagne",
+      "VK 36.01 (H) ***",
+      "armor",
+      "heavy"
+    ],
+    [
+      "Allemagne",
+      "VK 45.02 (P) ***",
+      "armor",
+      "heavy"
+    ],
+    [
+      "Allemagne",
+      "28/32 cm Wurfrahmen 40 auf Infanterie-Schlepper UE (f) **",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "3.7 cm PaK 36 (Sf) auf Sd.Kfz. 10 *",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "5 cm PaK 38 (Sf) auf Sd.Kfz. 10 *",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "5 cm PaK 38 (Sf) auf Sd.Kfz. 250 **",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "7.5 cm PaK 40/4 auf RSO/2 *",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "7.5 cm PaK 40 (Sf) auf SOMUA MCG (f) **",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "7.5 cm PaK 40/5 auf Zugkraftwagen 3t ***",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "3.7 cm PaK 36 (Sf) auf Renault UE (f)",
+      "gun",
+      null
+    ],
+    [
+      "Allemagne",
+      "Sd.Kfz. 250",
+      "transport",
+      null
+    ],
+    [
+      "Allemagne",
+      "Sd.Kfz. 251",
+      "transport",
+      null
+    ],
+    [
+      "URSS",
+      "M3 Stuart / M3A1 (Lend lease)",
+      "armor",
+      "light"
+    ],
+    [
+      "URSS",
+      "M3 Lee (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "M4A2 Sherman 75mm (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "M4A2(76)W Sherman (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "Valentine Mk II/III (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "Valentine Mk IX/X (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "Matilda II (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "Churchill Mk III/IV (Lend lease)",
+      "armor",
+      "medium"
+    ],
+    [
+      "URSS",
+      "T48 / SU-57 (Lend lease)",
+      "armor",
+      "td"
+    ],
+    [
+      "URSS",
+      "Universal Carrier (Lend lease)",
+      "armor",
+      "light"
+    ],
+    [
+      "URSS",
+      "M17 MGMC (Lend lease)",
+      "gun",
+      null
+    ],
+    [
+      "URSS",
+      "Studebaker US6 (Lend lease)",
+      "transport",
+      null
+    ],
+    [
+      "URSS",
+      "M3 Halftrack (Lend lease)",
+      "transport",
+      null
+    ]
+  ]
+}

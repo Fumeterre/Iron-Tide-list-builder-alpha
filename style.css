@@ -9,3 +9,32 @@
 
 /* V0.9.1 — Ordres spéciaux */
 .special-orders{margin:1rem 0;padding:1rem;border:1px solid #69788766;border-radius:10px}.special-orders h4{margin:.65rem 0}.special-orders ul{margin:.5rem 0;padding-left:1.5rem}.special-orders label{display:block;margin:.65rem 0}
+
+/* V0.9.6 — Mobile-first presentation layer; desktop remains unchanged. */
+#it-mobile-nav,#it-mobile-budget{display:none}
+@media(max-width:700px){
+ body.it-mobile{padding-bottom:116px}
+ body.it-mobile header{padding:12px 14px;gap:8px}
+ body.it-mobile h1{font-size:20px}
+ body.it-mobile header p{font-size:11px}
+ body.it-mobile main{padding:12px 10px}
+ body.it-mobile .panel{padding:13px 12px;margin-bottom:10px}
+ body.it-mobile .grid,body.it-mobile .options{grid-template-columns:minmax(0,1fr)}
+ body.it-mobile .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ body.it-mobile .stats>div{padding:10px}
+ body.it-mobile .toolbar{gap:7px}
+ body.it-mobile button,body.it-mobile .filebutton{min-height:42px;touch-action:manipulation}
+ body.it-mobile button.small{min-height:36px}
+ body.it-mobile input,body.it-mobile select{min-height:44px;font-size:16px}
+ body.it-mobile .line{align-items:flex-start}
+ body.it-mobile .corp,body.it-mobile .formation{padding:11px}
+ body.it-mobile .formation-shell>summary{min-height:44px;display:list-item;align-content:center}
+ body.it-mobile .mobile-hidden{display:none!important}
+ #it-mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1001;background:#101c2d;border-top:1px solid #435670;overflow-x:auto;gap:4px;padding:8px 8px max(8px,env(safe-area-inset-bottom));scrollbar-width:thin}
+ #it-mobile-nav button{flex:0 0 auto;min-height:44px;padding:8px 12px;background:#20354d;border:1px solid #405b78;font-size:12px}
+ #it-mobile-nav button.selected{background:#397fb3;border-color:#8bbfe6}
+ #it-mobile-budget{display:flex;position:fixed;bottom:66px;left:0;right:0;z-index:1000;background:#182a3e;border-top:1px solid #476582;align-items:center;justify-content:space-between;gap:8px;padding:7px 12px;font-weight:700}
+ #it-mobile-budget button{min-height:38px;font-size:12px}
+ body.it-mobile table{display:block;overflow-x:auto;max-width:100%}
+}
+@media print{#it-mobile-nav,#it-mobile-budget{display:none!important}.mobile-hidden{display:block!important}}
