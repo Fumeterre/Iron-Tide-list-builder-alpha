@@ -102,7 +102,13 @@ function modelPrice(f,m){let x=item(m.catalogId);if(!x)return null;let base=m.cu
 function formationPrice(f){let n=baseFormation(f);if(isInf(f)){let base=infantryFormationPrice(f);if(!deG2(f))return base;let extra=deG2SupportPrice(f);return base==null||extra==null?null:base+extra;}if(f.kind==='offtable')return artilleryOfftablePrice(f);for(let u of f.units){let p=unitPrice(f,u);if(p==null)return null;n+=p}for(let m of f.models){let p=modelPrice(f,m);if(p==null)return null;n+=p}if(!['light','medium','heavy','recon','assault','td','air','transport'].includes(f.kind))for(let s of f.support)n+=B.support[s]||0;if(f.obs)n+=B.support['Observateur supplémentaire']||15;if(f.obsTransportId){let tp=transportPrice(f.obsTransportId,f.obsSidecar);if(tp==null)return null;n+=tp}for(let k of f.forts)n+=B.fortifications[k]||0;return n}
 function rareOf(x){if(!x)return 0;let r=x.rarity||0;if(x.obsolete)r=Math.max(r,2);return r}
 function rarity(f){let r=Math.max(0,...f.models.map(m=>rareOf(item(m.catalogId))));let c=corps(f.corpId);return c?.nation==='URSS'&&c.group==='guard'?Math.max(2,r):r}
-function frontOk(x){let t=(x.theater||'').toUpperCase();if(!t)return true;let keywords={EST:['EST','RUSS','SOVI','FINLAND','FINLAN','POLOG'],OUEST:['OUEST','FRANCE','NORMAND','ARDENN','BELGI'],AFRIQUE:['AFRI','TUNIS','LIBY','EGYP'],ITALIE:['ITAL','SICIL'],FINLANDE:['FINLAN','EST']}[state.front]||[];return keywords.some(k=>t.includes(k))}
+function frontOk(x){
+ const t=String(x.theater||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase();
+ if(!t||/^(ALL|TOUS|TOUS FRONTS)$/.test(t))return true;
+ // Les fronts de l'OdB sont des théâtres autorisés, pas des noms à égalité stricte.
+ const patterns={EST:/FRONT\s*EST|RUSS|SOVI|POLOG|FINLAND|FINLAN|ASIE/,OUEST:/FRONT\s*OUEST|FRANCE|NORMAND|ARDENN|BELGI/,AFRIQUE:/AFRI|TUNIS|LIBY|EGYP/,ITALIE:/ITAL|SICIL/,FINLANDE:/FINLAN|FRONT\s*EST/};
+ return !!patterns[state.front]?.test(t);
+}
 // V3.56 — groupes d'armées et unités détachées (colonnes AG–AJ des OdB).
 const SOV_GROUPS=[['patriotic','Armée patriotique'],['guard','Garde soviétique'],['reserve','Réserve'],['nkvd','NKVD']];
 function groupLabel(c){return c.nation==='URSS'?({patriotic:'Armée patriotique',guard:'Garde soviétique',reserve:'Réserve',nkvd:'NKVD',standard:'Armée patriotique'}[c.group]||'Armée patriotique'):({standard:'Heer',ss:'SS',luftwaffe:'Luftwaffe',reserve:'Réserve'}[c.group]||'Heer')}
@@ -116,7 +122,15 @@ function sovMoraleChoices(f){let p=sovProfile(f);return !p?MORALES:p.g==='patrio
 function sovIssues(f){let p=sovProfile(f),out=[];if(!p)return out;let exp=normalizeExp(f.exp),mor=normalizeMorale(f.morale);if(!sovExpChoices(f).includes(exp))out.push('Expérience non autorisée pour '+groupLabel(corps(f.corpId)));if(!sovMoraleChoices(f).includes(mor))out.push('Moral non autorisé pour '+groupLabel(corps(f.corpId)));for(const m of f.models){if(m.exp&&!sovExpChoices(f,!!(m.command||f.command)).includes(normalizeExp(m.exp)))out.push('Expérience du véhicule '+(item(m.catalogId)?.name||'')+' non autorisée');if(m.morale&&!sovMoraleChoices(f).includes(normalizeMorale(m.morale)))out.push('Moral du véhicule non autorisé');}if(isInf(f)){let units=[f.hq,...(f.sections||[]).flatMap(s=>s.units||[]),...(f.reserveUnits||[])];for(const u of units){if(u.exp&&!sovExpChoices(f,u===f.hq||!!u.command).includes(normalizeExp(u.exp)))out.push('Expérience individuelle non autorisée');if(u.morale&&!sovMoraleChoices(f).includes(normalizeMorale(u.morale)))out.push('Moral individuel non autorisé')}}return [...new Set(out)]}
 function sovAsCount(c){return c.formations.reduce((n,f)=>n+(f.exp==='As'?1:0)+(f.models||[]).filter(m=>m.exp==='As').length,0)}
 function sovCorpsIssues(c){if(c.nation!=='URSS')return [];let a=[],g=c.group==='standard'?'patriotic':c.group;if(g==='patriotic'&&sovAsCount(c)>1)a.push('Armée patriotique : un seul As par corps');if(g==='reserve'&&sovAsCount(c)>0)a.push('Réserve : aucun As autorisé');if(g==='nkvd')for(const f of c.formations)if(!['inf','reserve','genie','cav','scout','horseScout','sniper'].includes(f.kind)&&!f.models.length)a.push('NKVD : formation non dédiée sans unité détachée : '+f.name);return a}
-function available(x,c){if(x.nation!==c.nation&&!x.universal)return false;if(x.costs?.[state.period]==null)return false;if(!frontOk(x))return false;if(!groupFlags(x,c).eligible)return false;const intro=String(x.intro||'');const y=Number(intro.match(/(?:19[3-4][0-9])/)?.[0]);if(y&&Number(state.year)<y)return false;const mm=intro.match(/(?:^|\D)(0?[1-9]|1[0-2])\s*\/\s*(19[3-4][0-9])/);if(mm&&Number(state.year)===Number(mm[2])&&Number(state.month)<Number(mm[1]))return false;return true}
+function available(x,c){
+ if(x.nation!==c.nation&&!x.universal)return false;
+ if(x.costs?.[state.period]==null)return false;
+ if(!frontOk(x))return false;
+ if(!groupFlags(x,c).eligible)return false;
+ // Les périodes d'introduction et les fronts sont définis dans les colonnes OdB.
+ // Une ancienne date importée ne doit pas contredire la période corrigée dans l'Excel.
+ return true;
+}
 // Multi-rôles : une référence OdB peut figurer dans plusieurs formations, sans duplication du catalogue.
 function isSu76MultiRole(x){return x?.nation==='URSS'&&/^(SU-76|SU-76M)$/i.test(String(x.name||'').trim())}
 function roleMatches(x,kind){const keys=[x.roleKey,...(Array.isArray(x.roleKeys)?x.roleKeys:[])].filter(Boolean);const raw=[x.role,x.subtype,x.type].join(' ').toLowerCase();return keys.includes(kind)||(kind==='art'&&isSu76MultiRole(x))||(kind==='at'&&/antichar|anti.char/.test(raw))||(kind==='aa'&&/antia[eé]rien|anti.a[eé]rien/.test(raw))}

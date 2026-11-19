@@ -1,0 +1,121 @@
+{
+  "sources": {
+    "Allemagne": 297,
+    "URSS": 233
+  },
+  "unmatched": [],
+  "new": [
+    {
+      "nation": "Allemagne",
+      "name": "0",
+      "sheet": "xl/worksheets/sheet1.xml"
+    },
+    {
+      "nation": "Allemagne",
+      "name": "0",
+      "sheet": "xl/worksheets/sheet1.xml"
+    }
+  ],
+  "periodChanges": [
+    {
+      "name": "0",
+      "old": null,
+      "new": ""
+    },
+    {
+      "name": "0",
+      "old": null,
+      "new": ""
+    }
+  ],
+  "frontChanges": [
+    {
+      "name": "0",
+      "old": null,
+      "new": ""
+    },
+    {
+      "name": "0",
+      "old": null,
+      "new": ""
+    },
+    {
+      "name": "Panther II (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Italie / Front EST / Front OUEST"
+    },
+    {
+      "name": "E-50 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-50 mit 10.5 cm KwK L/52 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-75 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-100 (prototype inachevé) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-75 mit 8.8 cm KwK 43 L/71 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-75 mit 10.5 cm KwK L/68 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-100 mit 15 cm KwK 44 L/38 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    },
+    {
+      "name": "E-10 mit 7.5 cm PaK 39 L/48 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front EST / Front OUEST"
+    },
+    {
+      "name": "E-10 mit 7.5 cm PaK 42 L/70 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front EST / Front OUEST"
+    },
+    {
+      "name": "E-25 mit 7.5 cm PaK 39 L/48 (Prototype) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front EST / Front OUEST"
+    },
+    {
+      "name": "E-50 Flak (proto) ***",
+      "old": "Prototype / non déployé",
+      "new": "Front OUEST / Front EST"
+    }
+  ],
+  "panhards": [
+    {
+      "name": "Panzerspähwagen P 204(f) (Panhard 178, France) *",
+      "period": "Early War (39–41) ; Mid War (42–43) ; Late War (44–45)",
+      "fronts": "Italie / Front EST / Front OUEST",
+      "costs": {
+        "Early": 52.0,
+        "Mid": 43.0,
+        "Late": 35.0
+      },
+      "kind": "armor",
+      "traction": "Roue",
+      "traits": "Reco, Conduite double, Casemate ouverte"
+    }
+  ],
+  "oldCount": 528,
+  "newCount": 530,
+  "missingOld": []
+}
