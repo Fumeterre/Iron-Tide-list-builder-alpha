@@ -66,3 +66,12 @@ body[data-war-period] .corp .muted{color:#d2d4cb}
 body[data-war-period] .corp .formation-picker{background:#171d1ab8;border-color:var(--nation-border)}
 @media(max-width:700px){body[data-war-period] #it-mobile-budget{background:var(--camo-panel);border-color:var(--camo-border)}body[data-war-period] #it-mobile-nav{background:var(--camo-base);border-color:var(--camo-border)}}
 @media print{body[data-war-period],body[data-war-period] .panel,body[data-war-period] .corp,body[data-war-period] .formation{background:#fff!important;color:#000!important;border-color:#999!important}}
+
+/* V3.61 — palettes synchronisées avec la période */
+body[data-war-period="early"]{--camo-base:#26343a;--camo-panel:#32434b;--camo-border:#8397a3;--camo-accent:#c3d5de}
+body[data-war-period="mid"]{--camo-base:#393822;--camo-panel:#4b492d;--camo-border:#aaa16d;--camo-accent:#e0cf88}
+body[data-war-period="late"]{--camo-base:#43391f;--camo-panel:#55492c;--camo-border:#b8a269;--camo-accent:#f0d58b}
+.corp.nation-de-mid{--nation-bg:#48472c;--nation-border:#a69d64;--nation-accent:#e6d69b;--nation-surface:#383922}
+body[data-war-period] .stats>div{background:var(--camo-panel);border-color:var(--camo-border)}
+body[data-war-period] .formation-picker{background:var(--camo-panel);border-color:var(--camo-border)}
+body[data-war-period] input,body[data-war-period] select{background:#202a2b;border-color:var(--camo-border)}
