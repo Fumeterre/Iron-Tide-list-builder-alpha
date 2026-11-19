@@ -1,0 +1,318 @@
+{
+  "catalogue": 528,
+  "avec_trait_reco": 44,
+  "reco_roues": [
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 234/3 **",
+      "type": "gun",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 234/4 **",
+      "type": "gun",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 221 *",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 222",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 231/232",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 233 **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 234/1 *",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 234/2 Puma **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Panzerspähwagen P 204(f) (Panhard 178, France) *",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 223",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 260/261 **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 247 **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Sd.Kfz. 263 (8 roues) **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    },
+    {
+      "nation": "URSS",
+      "reference": "BA-64 **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "URSS",
+      "reference": "BA-10 & 10M **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "URSS",
+      "reference": "BA-20 ***",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "URSS",
+      "reference": "BA-64B **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": "other"
+    },
+    {
+      "nation": "URSS",
+      "reference": "BA-3 / BA-6 (autos blindées lourdes) **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    },
+    {
+      "nation": "URSS",
+      "reference": "M3A1 Scout Car (Lend-Lease) **",
+      "type": "armor",
+      "traction": "Semi-chenillé",
+      "role": ""
+    },
+    {
+      "nation": "URSS",
+      "reference": "FAI / FAI-M (autos blindées légères) **",
+      "type": "armor",
+      "traction": "Roue",
+      "role": ""
+    }
+  ],
+  "reco_chenilles": [
+    {
+      "nation": "Allemagne",
+      "reference": "Panzer I Ausf. F **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Panzer II Ausf. F",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Panzer II Ausf. J **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "T-60 1940 (743(r))",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "T-60 1942 (743(r))",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "T-70 (743(r))",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "L6/40 (capturé) ***",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "Panzer II Ausf. L Luchs **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-27 tankette",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-37A",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-38",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-40",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-50 **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-60 1940",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-60 1942",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-70",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-80 light tank **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "M3 Stuart / M3A1 (Lend lease) **",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-37A",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-38",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    },
+    {
+      "nation": "URSS",
+      "reference": "T-40",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "light"
+    }
+  ],
+  "reco_non_classes": [
+    {
+      "nation": "Allemagne",
+      "reference": "E-10 mit 7.5 cm PaK 39 L/48 (Prototype) ***",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "td"
+    },
+    {
+      "nation": "Allemagne",
+      "reference": "E-10 mit 7.5 cm PaK 42 L/70 (Prototype) ***",
+      "type": "armor",
+      "traction": "Chenillé",
+      "role": "td"
+    },
+    {
+      "nation": "URSS",
+      "reference": "Universal Carrier (Lend lease) **",
+      "type": "transport",
+      "traction": "Chenillé",
+      "role": "other"
+    }
+  ]
+}

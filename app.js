@@ -11,6 +11,10 @@ for(const x of DB){if(!x.captured)continue;if(x.kind==='gun'&&/tract/i.test(Stri
 for(const x of DB){if(x.nation==='URSS'&&/^(SU-76|SU-76M)$/i.test(String(x.name||'').trim()))x.roleKeys=[...new Set([x.roleKey,'art','assault'])];}
 const KINDS={offtable:'Artillerie hors table',reserve:'Infanterie de Réserve',scout:'Section d’éclaireurs',horseScout:'Éclaireurs à cheval',sniper:'Section de snipers URSS',inf:'Infanterie',cav:'Cavalerie',genie:'Génie',recon:'Reconnaissance blindée',reconMotor:'Reconnaissance motorisée',light:'Chars légers',medium:'Chars moyens',heavy:'Chars lourds',assault:'Canons d’assaut',td:'Chasseurs de chars',at:'Antichar',art:'Artillerie rapprochée',aa:'Antiaérien',air:'Support aérien',transport:'Transports / soutien',fort:'Fortifications'};
 const PERIOD_END_YEAR={Early:1941,Mid:1943,Late:1945};
+// La période est déduite de l'année, y compris après chargement/import.
+const periodForYear=y=>Number(y)<=1941?'Early':Number(y)<=1943?'Mid':'Late';
+function syncPeriodFromYear(){state.year=Math.max(1939,Math.min(1947,Math.floor(Number(state.year)||1945)));state.period=periodForYear(state.year);}
+
 const PERIOD=['Early','Mid','Late'],EXPS=['Novice','Vétéran','Élite','As'],MORALES=['Hésitant','Vaillant','Tenace'];
 let state={name:'Ma force Iron Tide',front:'EST',period:'Late',year:1945,month:12,season:'',budget:2000,fortBudget:300,independentForts:[],corps:[{id:id(),nation:'Allemagne',group:'standard',doctrine:0,formations:[]}] ,custom:[]};
 let view='army',search='',editId=null;
@@ -112,7 +116,7 @@ function sovMoraleChoices(f){let p=sovProfile(f);return !p?MORALES:p.g==='patrio
 function sovIssues(f){let p=sovProfile(f),out=[];if(!p)return out;let exp=normalizeExp(f.exp),mor=normalizeMorale(f.morale);if(!sovExpChoices(f).includes(exp))out.push('Expérience non autorisée pour '+groupLabel(corps(f.corpId)));if(!sovMoraleChoices(f).includes(mor))out.push('Moral non autorisé pour '+groupLabel(corps(f.corpId)));for(const m of f.models){if(m.exp&&!sovExpChoices(f,!!(m.command||f.command)).includes(normalizeExp(m.exp)))out.push('Expérience du véhicule '+(item(m.catalogId)?.name||'')+' non autorisée');if(m.morale&&!sovMoraleChoices(f).includes(normalizeMorale(m.morale)))out.push('Moral du véhicule non autorisé');}if(isInf(f)){let units=[f.hq,...(f.sections||[]).flatMap(s=>s.units||[]),...(f.reserveUnits||[])];for(const u of units){if(u.exp&&!sovExpChoices(f,u===f.hq||!!u.command).includes(normalizeExp(u.exp)))out.push('Expérience individuelle non autorisée');if(u.morale&&!sovMoraleChoices(f).includes(normalizeMorale(u.morale)))out.push('Moral individuel non autorisé')}}return [...new Set(out)]}
 function sovAsCount(c){return c.formations.reduce((n,f)=>n+(f.exp==='As'?1:0)+(f.models||[]).filter(m=>m.exp==='As').length,0)}
 function sovCorpsIssues(c){if(c.nation!=='URSS')return [];let a=[],g=c.group==='standard'?'patriotic':c.group;if(g==='patriotic'&&sovAsCount(c)>1)a.push('Armée patriotique : un seul As par corps');if(g==='reserve'&&sovAsCount(c)>0)a.push('Réserve : aucun As autorisé');if(g==='nkvd')for(const f of c.formations)if(!['inf','reserve','genie','cav','scout','horseScout','sniper'].includes(f.kind)&&!f.models.length)a.push('NKVD : formation non dédiée sans unité détachée : '+f.name);return a}
-function available(x,c){if(x.nation!==c.nation&&!x.universal)return false;if(x.costs?.[state.period]==null)return false;if(!frontOk(x))return false;if(!groupFlags(x,c).eligible)return false;const y=Number(String(x.intro||'').match(/(?:19[3-4][0-9])/ )?.[0]);if(y&&Number(state.year)<y)return false;return true}
+function available(x,c){if(x.nation!==c.nation&&!x.universal)return false;if(x.costs?.[state.period]==null)return false;if(!frontOk(x))return false;if(!groupFlags(x,c).eligible)return false;const intro=String(x.intro||'');const y=Number(intro.match(/(?:19[3-4][0-9])/)?.[0]);if(y&&Number(state.year)<y)return false;const mm=intro.match(/(?:^|\D)(0?[1-9]|1[0-2])\s*\/\s*(19[3-4][0-9])/);if(mm&&Number(state.year)===Number(mm[2])&&Number(state.month)<Number(mm[1]))return false;return true}
 // Multi-rôles : une référence OdB peut figurer dans plusieurs formations, sans duplication du catalogue.
 function isSu76MultiRole(x){return x?.nation==='URSS'&&/^(SU-76|SU-76M)$/i.test(String(x.name||'').trim())}
 function roleMatches(x,kind){const keys=[x.roleKey,...(Array.isArray(x.roleKeys)?x.roleKeys:[])].filter(Boolean);const raw=[x.role,x.subtype,x.type].join(' ').toLowerCase();return keys.includes(kind)||(kind==='art'&&isSu76MultiRole(x))||(kind==='at'&&/antichar|anti.char/.test(raw))||(kind==='aa'&&/antia[eé]rien|anti.a[eé]rien/.test(raw))}
@@ -129,17 +133,22 @@ function deEngineerCarrier(f,x){return corps(f.corpId)?.nation==='Allemagne'&&f.
 function deEngineerDronePrice(f,m,x){if(!m.deDrone)return 0;if(!deEngineerCarrier(f,x))return null;return B.infOptions[m.deDrone==='goliath'?'Goliath (Allemagne)':'Borgward IV']??null;}
 // V0.9.8 : catégories de reconnaissance distinctes, basées sur les champs OdB.
 // Un transport d'éclaireurs n'est jamais un véhicule de reconnaissance autonome.
+function hasRecoTrait(x){return /(?:^|[,;\s])Reco(?:\s*[,;]|\s*$)/i.test(String(x?.traits||''));}
 function reconEligible(x,kind){
- if(!x||x.kind!=='armor'||!x.recon)return false;
- const traction=String(x.traction||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
- const wheels=/roue/.test(traction),tracked=/chenill/.test(traction);
- const transport=/transport|carrier|half.?track|semi.?chenill/i.test([x.subtype,x.role,x.type,x.traits].join(' '));
+ // Le trait explicite « Reco » de l'OdB fait foi : le rôle, le nom
+ // de la feuille et les valeurs recon héritées ne suffisent pas.
+ if(!x||!['armor','gun'].includes(x.kind))return false;
+ const traits=String(x.traits||'');
+ if(!hasRecoTrait(x))return false;
+ const raw=[x.traction,x.mounting,x.subtype].join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+ const wheels=/roue|semi.?chenill/.test(raw),tracked=/chenill/.test(raw)&&!/semi.?chenill/.test(raw);
+ const transport=/\btransport\s*\(|\btransporteur\b/i.test([x.type,x.role,x.subtype,x.traits].join(' '));
  if(transport)return false;
  if(kind==='reconMotor')return wheels;
- if(kind==='recon')return tracked&&x.armorRole==='light';
+ if(kind==='recon')return tracked&&x.kind==='armor'&&x.armorRole==='light';
  return false;
 }
-function candidates(f){if(candidateCache.has(f.id))return candidateCache.get(f.id);let c=corps(f.corpId);const result=all().filter(x=>available(x,c)).filter(x=>{if(isInf(f))return !x.recon&&(x.kind==='transport'||x.kind==='gun'||x.kind==='armor');if(['recon','reconMotor'].includes(f.kind))return reconEligible(x,f.kind)&&deMixAllowed(f,x);if(f.kind==='light'||f.kind==='medium'||f.kind==='heavy')return x.kind==='armor'&&!x.recon&&x.armorRole===f.kind&&deMixAllowed(f,x);if(f.kind==='assault'||f.kind==='td')return x.kind==='armor'&&!x.recon&&(x.armorRole===f.kind||(f.kind==='assault'&&isSu76MultiRole(x)))&&deMixAllowed(f,x);if(isGun(f))return (x.kind==='gun'||isSu76MultiRole(x))&&roleMatches(x,f.kind);if(f.kind==='air')return x.kind==='air'&&airCategory(x)===(f.airCategory||'Chasse');if(f.kind==='transport')return x.kind==='transport';return false});candidateCache.set(f.id,result);return result;}
+function candidates(f){if(candidateCache.has(f.id))return candidateCache.get(f.id);let c=corps(f.corpId);const result=all().filter(x=>available(x,c)).filter(x=>{if(isInf(f))return !hasRecoTrait(x)&&(x.kind==='transport'||x.kind==='gun'||x.kind==='armor');if(['recon','reconMotor'].includes(f.kind))return reconEligible(x,f.kind)&&deMixAllowed(f,x);if(f.kind==='light'||f.kind==='medium'||f.kind==='heavy')return x.kind==='armor'&&!hasRecoTrait(x)&&x.armorRole===f.kind&&deMixAllowed(f,x);if(f.kind==='assault'||f.kind==='td')return x.kind==='armor'&&!hasRecoTrait(x)&&(x.armorRole===f.kind||(f.kind==='assault'&&isSu76MultiRole(x)))&&deMixAllowed(f,x);if(isGun(f))return (x.kind==='gun'||isSu76MultiRole(x))&&roleMatches(x,f.kind);if(f.kind==='air')return x.kind==='air'&&airCategory(x)===(f.airCategory||'Chasse');if(f.kind==='transport')return x.kind==='transport';return false});candidateCache.set(f.id,result);return result;}
 // V0.8.2 — règles explicites de traction et de capacité, sans capacité inventée.
 const TRACTOR_RANK={'léger':1,'moyen':2,'lourd':3};
 function tractorRank(x){return TRACTOR_RANK[String(x?.tractorClass||'').toLowerCase()]||0}
@@ -436,7 +445,7 @@ function render(){
  refreshIndexes();const app=$('app');const previous=[...app.querySelectorAll('details')];const openKeys=new Set(previous.filter(d=>d.open).map(panelKey));
  const active=document.activeElement;const focusKey=active?.dataset?.action?{action:active.dataset.action,f:active.dataset.f,u:active.dataset.u,m:active.dataset.m,sec:active.dataset.sec,selection:typeof active.selectionStart==='number'?active.selectionStart:null}:null;
  const scrollX=window.scrollX,scrollY=window.scrollY;
- document.title='Iron Tide — Army Builder V3.55';
+ document.title='Iron Tide — Army Builder V3.57';
  document.body.dataset.warPeriod=['Early','Mid','Late'].includes(state.period)?state.period.toLowerCase():'late';
  app.innerHTML=header()+`<main>${view==='army'?army():forts()}</main>`;
  for(const d of app.querySelectorAll('details'))if(openKeys.has(panelKey(d)))d.open=true;
@@ -449,7 +458,7 @@ function scheduleRender(){if(renderPending)return;renderPending=true;requestAnim
 
 function download(name,content,type){let blob=new Blob([content],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)}
 function update(e){candidateCache.clear();allCache=null;let el=e.target,a=el.dataset.action;if(!a)return;let f=formation(el.dataset.f),c=corps(el.dataset.c),u=f?.units.find(x=>x.id===el.dataset.u),m=f?.models.find(x=>x.id===el.dataset.m),v=el.type==='checkbox'?el.checked:el.value,choice=el.dataset.value;
- if(a==='listName')state.name=v;else if(a==='month')state.month=Math.min(12,Math.max(1,Number(v)||12));else if(['front','period','season'].includes(a)){state[a]=v;if(a==='period')state.year=PERIOD_END_YEAR[v]||state.year;if(a==='season'&&!SEASON_MONTHS[v]?.includes(Number(state.month)))state.month=SEASON_MONTHS[v][0];}else if(['year','budget','fortBudget'].includes(a))state[a]=Number(v);
+ if(a==='listName')state.name=v;else if(a==='month')state.month=Math.min(12,Math.max(1,Number(v)||12));else if(['front','period','season'].includes(a)){state[a]=v;if(a==='period')state.year=PERIOD_END_YEAR[v]||state.year;if(a==='season'&&!SEASON_MONTHS[v]?.includes(Number(state.month)))state.month=SEASON_MONTHS[v][0];}else if(['year','budget','fortBudget'].includes(a)){state[a]=Number(v);if(a==='year')syncPeriodFromYear();}
  else if(a==='nation'){c.nation=v;c.group=v==='URSS'?'patriotic':'standard';c.formations=[];c.battleScenario='';c.battleOrder='';}else if(a==='group'){c.group=v;for(const ff of c.formations){/* Conserver les choix existants, mais signaler les écarts. */}}else if(a==='battleScenario'){c.battleScenario=v;c.battleOrder='';}else if(a==='battleScenarioOther')c.battleScenarioOther=v;else if(a==='battleOrder'&&c.battleScenario&&IT_SOVIET_ORDERS.includes(v))c.battleOrder=v;else if(a==='doctrine')c.doctrine=Number(v);
  else if(a==='newGroup'){c.nextGroup=v;c.nextKind=FORM_GROUPS[v][0];c.nextPrimary='';c.nextConfiguration=''}else if(a==='newKind'){c.nextKind=v;c.nextPrimary='';c.nextConfiguration='';}else if(a==='newConfiguration'){c.nextConfiguration=v;c.nextPrimary='';}else if(a==='newPrimary')c.nextPrimary=v;else if(a==='newPrimaryCount')c.nextPrimaryCount=Math.max(1,Math.min(20,Math.floor(Number(v)||1)));else if(a==='armyCorps'){c.armyCorps=v;c.nextGermanInf='';}else if(a==='newGermanInf')c.nextGermanInf=v;else if(a==='modelConfiguration'){f.configuration=v;f.choice='';}else if(a==='airCategory'){f.airCategory=v;f.choice=''}else if(a==='batterySize')f.batterySize=v;else if(a==='offtableUnitPrice')f.offtableUnitPrice=Math.max(0,Number(v)||0);else if(a==='obsTransport')f.obsTransportId=v;else if(a==='obsTransportSidecar')f.obsSidecar=v;else if(a==='formationName')f.name=v;else if(a==='formationExp')f.exp=v;else if(a==='formationMorale')f.morale=normalizeMorale(v);else if(a==='formationOsc')f.osc=v;else if(a==='formationFan')f.fan=v;
  else if(a==='unitType')u.type=v;else if(a==='unitCommand')u.command=v;else if(a==='unitExp')u.exp=v||null;else if(a==='unitMorale')u.morale=v?normalizeMorale(v):null;else if(a==='unitTransport')u.transportId=v;else if(a==='unitOption')u.options=v?[...new Set([...u.options,choice])]:u.options.filter(x=>x!==choice);
@@ -505,7 +514,8 @@ function migrateExperience(value){
  }
  return value;
 }
-document.addEventListener('change',e=>{if(e.target.id==='import'){let file=e.target.files?.[0];if(!file)return;file.text().then(t=>{try{let o=JSON.parse(t),s=o.state||o;if(!Array.isArray(s.corps))throw Error('Format incompatible : corps manquants');state=migrateExperience({...state,...s});const report=migrationReport(state);render();alert('Import terminé : '+report.count+' formation(s). Version source : '+report.version+'. Références à vérifier : '+(report.unknown.join(', ')||'aucune')+'. Consulte le panneau Conformité.')}catch(err){alert('Import impossible : '+err.message)}});return}update(e)});
+document.addEventListener('change',e=>{if(e.target.id==='import'){let file=e.target.files?.[0];if(!file)return;file.text().then(t=>{try{let o=JSON.parse(t),s=o.state||o;if(!Array.isArray(s.corps))throw Error('Format incompatible : corps manquants');state=migrateExperience({...state,...s});syncPeriodFromYear();const report=migrationReport(state);render();alert('Import terminé : '+report.count+' formation(s). Version source : '+report.version+'. Références à vérifier : '+(report.unknown.join(', ')||'aucune')+'. Consulte le panneau Conformité.')}catch(err){alert('Import impossible : '+err.message)}});return}update(e)});
 document.addEventListener('click',click);
 try{let saved=localStorage.getItem('iron-tide-v03');if(saved){let s=JSON.parse(saved);if(Array.isArray(s.corps))state=migrateExperience({...state,...s})}}catch(e){console.warn('Sauvegarde illisible',e)}
+syncPeriodFromYear();
 render();
