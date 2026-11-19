@@ -38,31 +38,3 @@
  body.it-mobile table{display:block;overflow-x:auto;max-width:100%}
 }
 @media print{#it-mobile-nav,#it-mobile-budget{display:none!important}.mobile-hidden{display:block!important}}
-
-/* Iron Tide V3.55 — camouflage par période et identification nationale.
-   Les valeurs ne modifient ni les unités, ni les coûts, ni les règles. */
-body[data-war-period="early"]{--camo-base:#222b27;--camo-panel:#293630;--camo-border:#596b5b;--camo-accent:#879785}
-body[data-war-period="mid"]{--camo-base:#2d3024;--camo-panel:#373b2b;--camo-border:#777c5a;--camo-accent:#a7a77c}
-body[data-war-period="late"]{--camo-base:#302d23;--camo-panel:#3d3a2d;--camo-border:#82785c;--camo-accent:#b7a779}
-body[data-war-period]{background:var(--camo-base);color:#f1f0e8}
-body[data-war-period] header{background:var(--camo-panel);border-bottom-color:var(--camo-border)}
-body[data-war-period] .panel{background:var(--camo-panel);border-color:var(--camo-border)}
-body[data-war-period] .stats>div{background:#222a25;border-color:var(--camo-border)}
-body[data-war-period] .formation-picker{background:#202720;border-color:var(--camo-border)}
-body[data-war-period] input,body[data-war-period] select{background:#171d1a;border-color:#7c8979;color:#fff}
-body[data-war-period] input:focus,body[data-war-period] select:focus{outline-color:var(--camo-accent)}
-/* Gris Panzer (Early), Dunkelgelb (Mid/Late), vert soviétique (toutes périodes). */
-.corp.nation-de-early{--nation-bg:#303a42;--nation-border:#85939d;--nation-accent:#bdc8ce;--nation-surface:#26313a}
-.corp.nation-de-late{--nation-bg:#49412b;--nation-border:#b3a16a;--nation-accent:#e1d098;--nation-surface:#393524}
-.corp.nation-urss{--nation-bg:#2d3e30;--nation-border:#819b73;--nation-accent:#b8d4a7;--nation-surface:#243429}
-body[data-war-period] .corp{background:var(--nation-bg);border:2px solid var(--nation-border);border-left-width:5px}
-body[data-war-period] .corp> .line h3{color:var(--nation-accent)}
-body[data-war-period] .corp .formation-shell{background:var(--nation-surface);border-color:var(--nation-border)}
-body[data-war-period] .corp .formation-shell[open]{border-color:var(--nation-accent)}
-body[data-war-period] .corp .formation{background:var(--nation-surface);border-color:var(--nation-border)}
-body[data-war-period] .corp .pill{background:#17221dd9;color:var(--nation-accent);border:1px solid var(--nation-border)}
-body[data-war-period] .corp label{color:#f0efe7}
-body[data-war-period] .corp .muted{color:#d2d4cb}
-body[data-war-period] .corp .formation-picker{background:#171d1ab8;border-color:var(--nation-border)}
-@media(max-width:700px){body[data-war-period] #it-mobile-budget{background:var(--camo-panel);border-color:var(--camo-border)}body[data-war-period] #it-mobile-nav{background:var(--camo-base);border-color:var(--camo-border)}}
-@media print{body[data-war-period],body[data-war-period] .panel,body[data-war-period] .corp,body[data-war-period] .formation{background:#fff!important;color:#000!important;border-color:#999!important}}
