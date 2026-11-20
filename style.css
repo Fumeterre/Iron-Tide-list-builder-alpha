@@ -75,3 +75,12 @@ body[data-war-period="late"]{--camo-base:#43391f;--camo-panel:#55492c;--camo-bor
 body[data-war-period] .stats>div{background:var(--camo-panel);border-color:var(--camo-border)}
 body[data-war-period] .formation-picker{background:var(--camo-panel);border-color:var(--camo-border)}
 body[data-war-period] input,body[data-war-period] select{background:#202a2b;border-color:var(--camo-border)}
+
+/* V3.64 : sections repliables et personnalisation progressive */
+.section-card,.infantry-personalization{margin:.65rem 0;border-radius:9px}
+.section-card>summary,.infantry-personalization>summary{cursor:pointer;padding:.7rem .8rem;line-height:1.5}
+.section-card[open],.infantry-personalization[open]{padding-bottom:.6rem}
+.option-category{margin:.45rem 0;padding:.35rem .55rem;border:1px solid var(--camo-border,#777);border-radius:7px}
+.option-category>summary{cursor:pointer;padding:.25rem}
+.option-category .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.35rem;padding:.5rem 0}
+@media(max-width:650px){.option-category .options{grid-template-columns:1fr}}
